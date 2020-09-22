@@ -1,0 +1,16 @@
+PODS:
+  - SensingKit (0.5.1)
+
+DEPENDENCIES:
+  - SensingKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SensingKit
+
+SPEC CHECKSUMS:
+  SensingKit: e4acb178652e6bcf23e564f2da111e5087b39e79
+
+PODFILE CHECKSUM: 83dcfca7e52c811007de8663ecf1c31da6c9157a
+
+COCOAPODS: 1.10.0.rc.1
