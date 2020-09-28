@@ -33,6 +33,11 @@ class FTSensingSession {
 //        return self
     }
 
+    func addModelWriter(){
+        var a = FTModelWriter(sensorType: SKSensorType.Battery, withHeader: "hehe", withFilename: "prova1", inPath: "hola")
+        //modelWriters.append(a)
+        
+    }
 //    func createFolderWithName(folderName:String!) -> NSURL! {
 ////        let error:NSError! = nil
 ////

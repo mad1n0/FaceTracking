@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupSensingKitBattery()
         if(fTSensingSession.isSensorEnabled(sensorType: SKSensorType.Battery)){
             print("FTSensingSession funcionant")
+            fTSensingSession.addModelWriter()
         }
         //setupFTSensingSession
         //setupSensingKitDeviceMotion()
