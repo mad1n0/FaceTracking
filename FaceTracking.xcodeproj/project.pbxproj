@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		21103C7E1BF9C6FF4873E5CB /* Pods_FaceTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F470C30C3FC72B66DD06FC /* Pods_FaceTracking.framework */; };
 		9879DBF12521102100086503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9879DBEF2521102100086503 /* Main.storyboard */; };
-		9879DBF62521FE4500086503 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9879DBF52521FE4500086503 /* File.swift */; };
 		9879DBFB2521FE6500086503 /* FTSensingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9879DBFA2521FE6500086503 /* FTSensingSession.swift */; };
+		9879DC472522423300086503 /* FTModelWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9879DC462522423300086503 /* FTModelWriter.swift */; };
 		98FC7FE4251A358F00A57727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FC7FE3251A358F00A57727 /* AppDelegate.swift */; };
 		98FC7FE6251A358F00A57727 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FC7FE5251A358F00A57727 /* SceneDelegate.swift */; };
 		98FC7FE8251A358F00A57727 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FC7FE7251A358F00A57727 /* ViewController.swift */; };
@@ -42,8 +42,8 @@
 		48F470C30C3FC72B66DD06FC /* Pods_FaceTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F114C187A32125D3578BBB7 /* Pods-FaceTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceTracking.release.xcconfig"; path = "Target Support Files/Pods-FaceTracking/Pods-FaceTracking.release.xcconfig"; sourceTree = "<group>"; };
 		9879DBF02521102100086503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9879DBF52521FE4500086503 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		9879DBFA2521FE6500086503 /* FTSensingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTSensingSession.swift; sourceTree = "<group>"; };
+		9879DC462522423300086503 /* FTModelWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTModelWriter.swift; sourceTree = "<group>"; };
 		98FC7FE0251A358F00A57727 /* FaceTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FC7FE3251A358F00A57727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98FC7FE5251A358F00A57727 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 				98FC7FE3251A358F00A57727 /* AppDelegate.swift */,
 				98FC7FE5251A358F00A57727 /* SceneDelegate.swift */,
 				98FC7FE7251A358F00A57727 /* ViewController.swift */,
-				9879DBF52521FE4500086503 /* File.swift */,
+				9879DC462522423300086503 /* FTModelWriter.swift */,
 				9879DBFA2521FE6500086503 /* FTSensingSession.swift */,
 				98FC7FEF251A358F00A57727 /* Assets.xcassets */,
 				98FC7FF1251A358F00A57727 /* LaunchScreen.storyboard */,
@@ -338,9 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9879DBFB2521FE6500086503 /* FTSensingSession.swift in Sources */,
-				9879DBF62521FE4500086503 /* File.swift in Sources */,
 				98FC7FE8251A358F00A57727 /* ViewController.swift in Sources */,
 				98FC7FE4251A358F00A57727 /* AppDelegate.swift in Sources */,
+				9879DC472522423300086503 /* FTModelWriter.swift in Sources */,
 				98FC7FE6251A358F00A57727 /* SceneDelegate.swift in Sources */,
 				98FC7FEE251A358F00A57727 /* FaceTracking.xcdatamodeld in Sources */,
 			);
