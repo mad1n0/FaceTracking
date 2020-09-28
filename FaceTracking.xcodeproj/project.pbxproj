@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		21103C7E1BF9C6FF4873E5CB /* Pods_FaceTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F470C30C3FC72B66DD06FC /* Pods_FaceTracking.framework */; };
+		9879DBF12521102100086503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9879DBEF2521102100086503 /* Main.storyboard */; };
 		98FC7FE4251A358F00A57727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FC7FE3251A358F00A57727 /* AppDelegate.swift */; };
 		98FC7FE6251A358F00A57727 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FC7FE5251A358F00A57727 /* SceneDelegate.swift */; };
 		98FC7FE8251A358F00A57727 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FC7FE7251A358F00A57727 /* ViewController.swift */; };
-		98FC7FEB251A358F00A57727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FC7FE9251A358F00A57727 /* Main.storyboard */; };
 		98FC7FEE251A358F00A57727 /* FaceTracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98FC7FEC251A358F00A57727 /* FaceTracking.xcdatamodeld */; };
 		98FC7FF0251A358F00A57727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FC7FEF251A358F00A57727 /* Assets.xcassets */; };
 		98FC7FF3251A358F00A57727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FC7FF1251A358F00A57727 /* LaunchScreen.storyboard */; };
@@ -39,11 +39,11 @@
 /* Begin PBXFileReference section */
 		48F470C30C3FC72B66DD06FC /* Pods_FaceTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F114C187A32125D3578BBB7 /* Pods-FaceTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceTracking.release.xcconfig"; path = "Target Support Files/Pods-FaceTracking/Pods-FaceTracking.release.xcconfig"; sourceTree = "<group>"; };
+		9879DBF02521102100086503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98FC7FE0251A358F00A57727 /* FaceTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FC7FE3251A358F00A57727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98FC7FE5251A358F00A57727 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		98FC7FE7251A358F00A57727 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		98FC7FEA251A358F00A57727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98FC7FED251A358F00A57727 /* FaceTracking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaceTracking.xcdatamodel; sourceTree = "<group>"; };
 		98FC7FEF251A358F00A57727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98FC7FF2251A358F00A57727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,9 +130,9 @@
 				98FC7FE3251A358F00A57727 /* AppDelegate.swift */,
 				98FC7FE5251A358F00A57727 /* SceneDelegate.swift */,
 				98FC7FE7251A358F00A57727 /* ViewController.swift */,
-				98FC7FE9251A358F00A57727 /* Main.storyboard */,
 				98FC7FEF251A358F00A57727 /* Assets.xcassets */,
 				98FC7FF1251A358F00A57727 /* LaunchScreen.storyboard */,
+				9879DBEF2521102100086503 /* Main.storyboard */,
 				98FC7FF4251A358F00A57727 /* Info.plist */,
 				98FC7FEC251A358F00A57727 /* FaceTracking.xcdatamodeld */,
 			);
@@ -262,9 +262,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9879DBF12521102100086503 /* Main.storyboard in Resources */,
 				98FC7FF3251A358F00A57727 /* LaunchScreen.storyboard in Resources */,
 				98FC7FF0251A358F00A57727 /* Assets.xcassets in Resources */,
-				98FC7FEB251A358F00A57727 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,10 +370,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		98FC7FE9251A358F00A57727 /* Main.storyboard */ = {
+		9879DBEF2521102100086503 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				98FC7FEA251A358F00A57727 /* Base */,
+				9879DBF02521102100086503 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

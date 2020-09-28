@@ -5,16 +5,25 @@
 //  Created by Marc Valdivieso Merino on 22/09/2020.
 //
 
+
 import UIKit
 import CoreData
+import SensingKit
+
+let sensingKit = SensingKitLib.shared()
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+     var window: UIWindow?
 
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print("hola des de didfinish");
+        setupSensingKitBattery()
+        //setupSensingKitDeviceMotion()
         return true
     }
 
@@ -75,6 +84,79 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    func setupSensingKitBattery () {
+        
+        print("holasetup")
+        if sensingKit.isSensorAvailable(SKSensorType.Battery) {
+            // You can access the sensor
+            print("sensingkit battery available")
+        }
+
+        do {
+            try sensingKit.register(SKSensorType.Battery)
+        }
+        catch {
+            // Handle error
+        }
+        do {
+            try sensingKit.subscribe(to: SKSensorType.Battery, withHandler: { (sensorType, sensorData, error) in
+
+                if (error == nil) {
+                    let batteryData = sensorData as! SKBatteryData
+                    print("Battery Level: \(batteryData)")
+                }
+            })
+        }
+        catch {
+            // Handle error
+        }
+        
+        do {
+            try sensingKit.startContinuousSensing(with:SKSensorType.Battery)
+        }
+        catch {
+            // Handle error
+        }
+        
+    }
+    
+    func setupSensingKitDeviceMotion () {
+        
+        print("holasetup DeviceMotion")
+        if sensingKit.isSensorAvailable(SKSensorType.DeviceMotion) {
+            // You can access the sensor
+            print("sensingkit battery available")
+        }
+
+        do {
+            try sensingKit.register(SKSensorType.DeviceMotion)
+        }
+        catch {
+            // Handle error
+            print("DeviceMotion not available")
+        }
+        do {
+            try sensingKit.subscribe(to: SKSensorType.DeviceMotion, withHandler: { (sensorType, sensorData, error) in
+
+                if (error == nil) {
+                    let DeviceMotionData = sensorData as! SKDeviceMotionData
+                    print("DeviceMotion Level: \(DeviceMotionData)")
+                }
+            })
+        }
+        catch {
+            // Handle error
+        }
+        
+        do {
+            try sensingKit.startContinuousSensing(with:SKSensorType.DeviceMotion)
+        }
+        catch {
+            // Handle error
+        }
+        
     }
 
 }
