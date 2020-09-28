@@ -10,19 +10,23 @@ import UIKit
 import CoreData
 import SensingKit
 
-let sensingKit = SensingKitLib.shared()
+
 
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-     var window: UIWindow?
-
-
+    var window: UIWindow?
+    let sensingKit = SensingKitLib.shared()
+    let fTSensingSession = FTSensingSession(folderName: "foldername")
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         print("hola des de didfinish");
         setupSensingKitBattery()
+        if(fTSensingSession.isSensorEnabled(sensorType: SKSensorType.Battery)){
+            print("FTSensingSession funcionant")
+        }
+        //setupFTSensingSession
         //setupSensingKitDeviceMotion()
         return true
     }
