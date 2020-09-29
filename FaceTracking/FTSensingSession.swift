@@ -38,6 +38,11 @@ class FTSensingSession {
         //modelWriters.append(a)
         
     }
+    
+    func writeCSV(){
+        
+        
+    }
 //    func createFolderWithName(folderName:String!) -> NSURL! {
 ////        let error:NSError! = nil
 ////
