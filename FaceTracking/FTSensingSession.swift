@@ -103,7 +103,8 @@ class FTSensingSession {
         }
 
         do {
-            try sensingKit.register(sensorType)
+            let conf =  SKLocationConfiguration()
+            try sensingKit.register(sensorType, with:conf)
         }
         catch {
             print("Cannot register")

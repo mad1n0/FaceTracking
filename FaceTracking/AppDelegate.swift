@@ -21,11 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //setupSensingKitDeviceMotion()
 
-        if(fTSensingSession.isSensorEnabled(sensorType: SKSensorType.Battery)){
-            print("FTSensingSession funcionant")
-            fTSensingSession.addModelWriter()
-        }
 
         return true
     }

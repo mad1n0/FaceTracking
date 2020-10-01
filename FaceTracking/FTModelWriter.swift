@@ -47,15 +47,13 @@ class FTModelWriter {
         let csv:String! = String(format:"%@\n", sensorData.csvString)
         NSLog("%@", csv)
         print(sensorData.csvString + "thisiscsvStrng")
+        createCSV(csvString: sensorData.csvString)
         //NSDictionary *dictionary = sensorData.dictionaryData;
        // self.writeString(csv)
     }
     
-    func createCSV(from recArray:[Dictionary<String, AnyObject>]) {
-            var csvString = "\("Employee ID"),\("Employee Name")\n\n"
-            for dct in recArray {
-                csvString = csvString.appending("\(String(describing: dct["EmpID"]!)) ,\(String(describing: dct["EmpName"]!))\n")
-            }
+    func createCSV(csvString : String) {
+
 
             let fileManager = FileManager.default
             do {

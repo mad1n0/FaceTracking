@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        appDelegate.fTSensingSession.enableSensor(sensorType: SKSensorType.Location)
     }
 
 
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     @IBAction func StartSensing(_ sender: Any) {
         
-        appDelegate.fTSensingSession.enableSensor(sensorType: SKSensorType.Location)
+        
         if(appDelegate.fTSensingSession.isSensorAvailable(sensorType: SKSensorType.Location))
         {
             print("Location enabled")
