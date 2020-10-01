@@ -24,8 +24,7 @@ class FTModelWriter {
         self.header = header
         self.filename = filename
         outputStream = (filename + "ModelWriter ON")
-        setupTrialSensor()
-        setupSensor()
+
 //        readData(LocationData)
 //            _sensorType = sensorType
 //            let filePath:NSURL! = path.URLByAppendingPathComponent(filename)
@@ -40,44 +39,10 @@ class FTModelWriter {
         
     }
     
-    func setupSensor(){
-        
-        
-    }
-    
-    func setupTrialSensor(){
-        if sensingKit.isSensorAvailable(SKSensorType.Location) {
-            // You can access the sensor
-            print("sensingkit Location available")
-        }
-
-        do {
-            try sensingKit.register(SKSensorType.Location)
-            print ("hola")
-        }
-        catch {
-            // Handle error
-        }
-        do {
-            try sensingKit.subscribe(to: SKSensorType.Location, withHandler: { (sensorType, sensorData, error) in
-
-                if (error == nil) {
-                    let LocationData = sensorData as! SKLocationData
-                    print("Hi from subscribe location datareading")
-                    print("Battery Level: \(LocationData)")
-                    self.readData(sensorData: LocationData)
-                }
-            })
-        }
-        catch {
-            print("F")// Handle error
-        }
-        
-    }
+ 
     
     func readData(sensorData:SKSensorData!) {
         let csv:String! = String(format:"%@\n", sensorData.csvString)
-        // debug
         NSLog("%@", csv)
         print(sensorData.csvString + "thisiscsvStrng")
         //NSDictionary *dictionary = sensorData.dictionaryData;

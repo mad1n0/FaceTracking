@@ -6,18 +6,17 @@
 //
 
 import UIKit
+import SensingKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let rect = CGRect(x: 10, y: 10, width: 100, height: 100)
-    let list = ["un","dos","tres","quatre"]
+
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("viewDidLoad")
         // Do any additional setup after loading the view.
-        var fTSensingSession = appDelegate.fTSensingSession
+       
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -54,9 +53,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func StartSensing(_ sender: Any) {
-        print("Start sensing")
-        appDelegate.fTSensingSession.addLocationModelWriter()
-        appDelegate.fTSensingSession.addModelWriter()
+        
+        appDelegate.fTSensingSession.enableSensor(sensorType: SKSensorType.Location)
+        if(appDelegate.fTSensingSession.isSensorAvailable(sensorType: SKSensorType.Location))
+        {
+            print("Location enabled")
+        }
+        
+        if appDelegate.fTSensingSession.start(sensorType:  SKSensorType.Location){
+            print("cont enabled")
+        }
+
+        
         
         
     }

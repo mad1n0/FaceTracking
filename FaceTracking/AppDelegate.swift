@@ -21,14 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        print("hola des de didfinish");
-        setupSensingKitBattery()
+
         if(fTSensingSession.isSensorEnabled(sensorType: SKSensorType.Battery)){
             print("FTSensingSession funcionant")
             fTSensingSession.addModelWriter()
         }
-        //setupFTSensingSession
-        //setupSensingKitDeviceMotion()
+
         return true
     }
 
@@ -46,10 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    func buttonsayshi(){
-        print("buttonsayshi")
-        
-    }
     
     func getCurrentPath() -> String{
         return fileManager.currentDirectoryPath
@@ -100,41 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func setupSensingKitBattery () {
-        
-        print("holasetup")
-        if sensingKit.isSensorAvailable(SKSensorType.Battery) {
-            // You can access the sensor
-            print("sensingkit battery available")
-        }
-
-        do {
-            try sensingKit.register(SKSensorType.Battery)
-        }
-        catch {
-            // Handle error
-        }
-        do {
-            try sensingKit.subscribe(to: SKSensorType.Battery, withHandler: { (sensorType, sensorData, error) in
-
-                if (error == nil) {
-                    let batteryData = sensorData as! SKBatteryData
-                    print("Battery Level: \(batteryData)")
-                }
-            })
-        }
-        catch {
-            // Handle error
-        }
-        
-        do {
-            try sensingKit.startContinuousSensing(with:SKSensorType.Battery)
-        }
-        catch {
-            // Handle error
-        }
-        
-    }
+    
     
     func setupSensingKitDeviceMotion () {
         

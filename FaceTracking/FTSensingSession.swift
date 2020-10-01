@@ -11,7 +11,7 @@ import SensingKit
 
 class FTSensingSession {
 
-    private var modelWriters:NSMutableArray!
+    private var modelWriters:Array<FTModelWriter>!
     let sensingKit = SensingKitLib.shared()
 
     
@@ -29,6 +29,9 @@ class FTSensingSession {
 //        }
 //        return self
     }
+    
+    
+
     
     func addModelWriter(){
         //let path = AppDelegate.getCurrentPath()
@@ -81,7 +84,55 @@ class FTSensingSession {
 //        return nil
 //    }
 
-    func enableSensor(sensorType:SKSensorType, withConfiguration configuration:SKConfiguration!, withError error:NSError!) -> Bool {
+    
+    func enableBattery(){
+        enableSensor(sensorType: SKSensorType.Battery)
+    }
+    
+    
+    func enableSensor(sensorType:SKSensorType)  {
+        let path  = "ye"
+        
+        let header = self.sensingKit.csvHeader(for:sensorType)
+        print (header)
+        let filename:String = String(describing: sensorType)
+        print(filename)
+        
+        if sensingKit.isSensorAvailable(sensorType) {
+            // You can access the sensor
+        }
+
+        do {
+            try sensingKit.register(sensorType)
+        }
+        catch {
+            print("Cannot register")
+        }
+        do {
+            try sensingKit.subscribe(to: sensorType, withHandler: { (sensorType, sensorData, error) in
+
+                if (error == nil) {
+                    let batteryData = sensorData as! SKLocationData
+                    print("Location: \(batteryData)")
+                }
+            })
+        }
+        catch {
+            print("Cannot subscribe")
+            
+        }
+        let FTMW = FTModelWriter(sensorType: sensorType, withHeader: header, withFilename: filename, inPath: path)
+        //modelWriters.append(FTMW)
+        // print(modelWriters[0])
+        
+        //FTMW.readData(sensorData: batteryData)
+        
+        //modelWriters.add(FTMW)
+        
+        //print (modelWriters[0])
+        
+
+        //String.nonspacedStringWithSensorType(sensorType).stringByAppendingString(".csv")
         
         /*
         // Get the csv header
@@ -123,7 +174,7 @@ class FTSensingSession {
         else {
             return false
         }*/
-        return true
+
     }
 
     func disableSensor(sensorType:SKSensorType, withError error:NSError!) -> Bool {
@@ -265,9 +316,9 @@ class FTSensingSession {
         return counter
     }
 
-    func start(error:NSError!) -> Bool {
+    func start(sensorType: SKSensorType) -> Bool {
         do {
-            try sensingKit.startContinuousSensing(with:SKSensorType.Battery)
+            try sensingKit.startContinuousSensing(with: sensorType)
         }
         catch {
             return false
@@ -275,9 +326,9 @@ class FTSensingSession {
         return true
     }
 
-    func stop(error:NSError!) -> Bool {
+    func stop(sensorType: SKSensorType, error:NSError!) -> Bool {
         do {
-            try sensingKit.stopContinuousSensing(with:SKSensorType.Battery)
+            try sensingKit.stopContinuousSensing(with: sensorType)
         }
         catch {
             return false
