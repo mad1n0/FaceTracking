@@ -42,6 +42,8 @@ class FTModelWriter {
  
     
     func readData(sensorData:SKSensorData!) {
+        
+        
         let csv:String! = String(format:"%@\n", sensorData.csvString)
         NSLog("%@", csv)
         print(sensorData.csvString + "thisiscsvStrng")

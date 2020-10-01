@@ -112,8 +112,10 @@ class FTSensingSession {
             try sensingKit.subscribe(to: sensorType, withHandler: { (sensorType, sensorData, error) in
 
                 if (error == nil) {
+                    let FTMW = FTModelWriter(sensorType: sensorType, withHeader: header, withFilename: filename, inPath: path)
                     let batteryData = sensorData as! SKLocationData
                     print("Location: \(batteryData)")
+                    FTMW.readData(sensorData: batteryData)
                 }
             })
         }
@@ -121,7 +123,7 @@ class FTSensingSession {
             print("Cannot subscribe")
             
         }
-        let FTMW = FTModelWriter(sensorType: sensorType, withHeader: header, withFilename: filename, inPath: path)
+        
         //modelWriters.append(FTMW)
         // print(modelWriters[0])
         
