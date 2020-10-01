@@ -10,12 +10,14 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let rect = CGRect(x: 10, y: 10, width: 100, height: 100)
     let list = ["un","dos","tres","quatre"]
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hola")
-        // Do any additional setup after loading the view.
-        let myView  = UIView(frame: rect)
         
+        print("viewDidLoad")
+        // Do any additional setup after loading the view.
+        var fTSensingSession = appDelegate.fTSensingSession
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -30,6 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+//    func pressed
     
     @IBAction func changeColor(sender: UIButton) {
         print(sender.classForCoder)
@@ -43,7 +46,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
          
         view.backgroundColor = color
     }
-
+    
+    @IBAction func startAction(_ sender: UIButton) {
+        print("Button says hi")
+        
+        
+    }
+    
+    @IBAction func StartSensing(_ sender: Any) {
+        print("Start sensing")
+        appDelegate.fTSensingSession.addLocationModelWriter()
+        appDelegate.fTSensingSession.addModelWriter()
+        
+        
+    }
 }
 
 

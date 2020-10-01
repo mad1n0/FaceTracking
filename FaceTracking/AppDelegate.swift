@@ -3,7 +3,6 @@
 //  FaceTracking
 //
 //  Created by Marc Valdivieso Merino on 22/09/2020.
-//
 
 
 import UIKit
@@ -17,6 +16,7 @@ import SensingKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let sensingKit = SensingKitLib.shared()
+    let fileManager = FileManager.default
     let fTSensingSession = FTSensingSession(folderName: "foldername")
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -44,6 +44,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func buttonsayshi(){
+        print("buttonsayshi")
+        
+    }
+    
+    func getCurrentPath() -> String{
+        return fileManager.currentDirectoryPath
     }
 
     // MARK: - Core Data stack

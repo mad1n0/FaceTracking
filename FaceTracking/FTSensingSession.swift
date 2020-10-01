@@ -1,9 +1,6 @@
-//
 //  FTSensingSession.swift
 //  FaceTracking
-//
 //  Created by Marc Valdivieso Merino on 28/09/2020.
-//
 
 //#import "CSSensingSession.h"
 //#import "CSModelWriter.h"
@@ -32,11 +29,22 @@ class FTSensingSession {
 //        }
 //        return self
     }
-
+    
     func addModelWriter(){
+        //let path = AppDelegate.getCurrentPath()
+        var a = FTModelWriter(sensorType: SKSensorType.DeviceMotion, withHeader: "DeviceMotionTrial", withFilename: "DeviceMotrionTrial", inPath: "currentPath")
+        
+    }
+
+    func addModelWriter1(){
         var a = FTModelWriter(sensorType: SKSensorType.Battery, withHeader: "hehe", withFilename: "prova1", inPath: "hola")
+        print()
         //modelWriters.append(a)
         
+    }
+    
+    func addLocationModelWriter(){
+        var a = FTModelWriter(sensorType: SKSensorType.Location, withHeader: "huhu", withFilename: "prova2", inPath: "hola")
     }
     
     func writeCSV(){

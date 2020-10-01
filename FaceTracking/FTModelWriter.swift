@@ -12,13 +12,20 @@ class FTModelWriter {
     let sensingKit = SensingKitLib.shared()
     private var filePath:String
     private var outputStream: String
+    private var sensorTyp: SKSensorType
+    private var header: String
+    private var filename: String
 
     init(sensorType:SKSensorType, withHeader header:String!, withFilename filename:String!, inPath path:String!) {
         
         print("writer on")
         filePath = path
+        sensorTyp = sensorType
+        self.header = header
+        self.filename = filename
         outputStream = (filename + "ModelWriter ON")
         setupTrialSensor()
+        setupSensor()
 //        readData(LocationData)
 //            _sensorType = sensorType
 //            let filePath:NSURL! = path.URLByAppendingPathComponent(filename)
@@ -32,15 +39,21 @@ class FTModelWriter {
 //            self.writeString(String(format:"%@\n", header))
         
     }
-
+    
+    func setupSensor(){
+        
+        
+    }
+    
     func setupTrialSensor(){
         if sensingKit.isSensorAvailable(SKSensorType.Location) {
             // You can access the sensor
-            print("sensingkit battery available")
+            print("sensingkit Location available")
         }
 
         do {
             try sensingKit.register(SKSensorType.Location)
+            print ("hola")
         }
         catch {
             // Handle error
@@ -50,6 +63,7 @@ class FTModelWriter {
 
                 if (error == nil) {
                     let LocationData = sensorData as! SKLocationData
+                    print("Hi from subscribe location datareading")
                     print("Battery Level: \(LocationData)")
                     self.readData(sensorData: LocationData)
                 }
@@ -65,6 +79,7 @@ class FTModelWriter {
         let csv:String! = String(format:"%@\n", sensorData.csvString)
         // debug
         NSLog("%@", csv)
+        print(sensorData.csvString + "thisiscsvStrng")
         //NSDictionary *dictionary = sensorData.dictionaryData;
        // self.writeString(csv)
     }
