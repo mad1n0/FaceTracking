@@ -7,6 +7,7 @@
 
 //#import "CSModelWriter.h"
 import SensingKit
+import SSZipArchive
 
 class FTModelWriter {
     let sensingKit = SensingKitLib.shared()
@@ -57,12 +58,16 @@ class FTModelWriter {
                 let path = getDocumentsDirectory()
                 let fileURL = URL(fileURLWithPath: "1", relativeTo: path).appendingPathExtension("csv")
                 //print(fileURL)
+                var fileURLS = [String]()
+                fileURLS.append(fileURL.absoluteString)
                 try csvString.write(to: fileURL, atomically: true, encoding: .utf8)
+                SSZipArchive.createZipFile(atPath: path.absoluteString, withFilesAtPaths: fileURLS)
                 let savedData = try Data(contentsOf: fileURL)
                 // Convert the data back into a string
                 if let savedString = String(data: savedData, encoding: .utf8) {
                     print(savedString + "this is savedString")}
                 }
+                
                 
             
             catch {
