@@ -7,4 +7,7 @@ target 'FaceTracking' do
   # For the latest development version, please use:
   # pod 'SensingKit', :git => 'https://github.com/SensingKit/SensingKit-iOS.git', :branch => 'next'
 
+  pod 'Alamofire', '~> 5.2'
+  pod 'SSZipArchive'
+
 end

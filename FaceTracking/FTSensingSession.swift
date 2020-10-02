@@ -35,19 +35,19 @@ class FTSensingSession {
     
     func addModelWriter(){
         //let path = AppDelegate.getCurrentPath()
-        var a = FTModelWriter(sensorType: SKSensorType.DeviceMotion, withHeader: "DeviceMotionTrial", withFilename: "DeviceMotrionTrial", inPath: "currentPath")
+        //var a = FTModelWriter(sensorType: SKSensorType.DeviceMotion, withHeader: "DeviceMotionTrial", withFilename: "DeviceMotrionTrial", inPath: "currentPath")
         
     }
 
     func addModelWriter1(){
-        var a = FTModelWriter(sensorType: SKSensorType.Battery, withHeader: "hehe", withFilename: "prova1", inPath: "hola")
+        //var a = FTModelWriter(sensorType: SKSensorType.Battery, withHeader: "hehe", withFilename: "prova1", inPath: "hola")
         print()
         //modelWriters.append(a)
         
     }
     
     func addLocationModelWriter(){
-        var a = FTModelWriter(sensorType: SKSensorType.Location, withHeader: "huhu", withFilename: "prova2", inPath: "hola")
+        //var a = FTModelWriter(sensorType: SKSensorType.Location, withHeader: "huhu", withFilename: "prova2", inPath: "hola")
     }
     
     func writeCSV(){
@@ -91,7 +91,7 @@ class FTSensingSession {
     
     
     func enableSensor(sensorType:SKSensorType)  {
-        let path  = "ye"
+        let path  = URL(string: "/")
         
         let header = self.sensingKit.csvHeader(for:sensorType)
         print (header)

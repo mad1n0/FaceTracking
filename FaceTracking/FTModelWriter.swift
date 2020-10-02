@@ -10,20 +10,19 @@ import SensingKit
 
 class FTModelWriter {
     let sensingKit = SensingKitLib.shared()
-    private var filePath:String
-    private var outputStream: String
-    private var sensorTyp: SKSensorType
+    private var filePath:URL
+//    private var outputStream: OutputStream
+    private var sensorType: SKSensorType
     private var header: String
     private var filename: String
 
-    init(sensorType:SKSensorType, withHeader header:String!, withFilename filename:String!, inPath path:String!) {
+    init(sensorType:SKSensorType, withHeader header:String!, withFilename filename:String!, inPath path:URL!) {
         
-        print("writer on")
         filePath = path
-        sensorTyp = sensorType
+        self.sensorType = sensorType
         self.header = header
         self.filename = filename
-        outputStream = (filename + "ModelWriter ON")
+//        outputStream = OutputStream(toFileAtPath: ""?, append: true)
 
 //        readData(LocationData)
 //            _sensorType = sensorType
@@ -48,27 +47,38 @@ class FTModelWriter {
         NSLog("%@", csv)
         print(sensorData.csvString + "thisiscsvStrng")
         createCSV(csvString: sensorData.csvString)
+        //outputStream.write(sensorData.csvString)
         //NSDictionary *dictionary = sensorData.dictionaryData;
        // self.writeString(csv)
     }
     
     func createCSV(csvString : String) {
-
-
-            let fileManager = FileManager.default
             do {
-                let path = try fileManager.url(for: .documentDirectory, in: .allDomainsMask, appropriateFor: nil, create: false)
-                let fileURL = path.appendingPathComponent("CSVRec.csv")
+                let path = getDocumentsDirectory()
+                let fileURL = URL(fileURLWithPath: "1", relativeTo: path).appendingPathExtension("csv")
+                //print(fileURL)
                 try csvString.write(to: fileURL, atomically: true, encoding: .utf8)
-            } catch {
+                let savedData = try Data(contentsOf: fileURL)
+                // Convert the data back into a string
+                if let savedString = String(data: savedData, encoding: .utf8) {
+                    print(savedString + "this is savedString")}
+                }
+                
+            
+            catch {
                 print("error creating file")
             }
 
         }
     
-    func writeString(string:String!) {
-    //    let data:Data! = string.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion:false)
-     //   self.outputStream.write(data.bytes, maxLength:data.length)
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
+    func read() {
+    
     }
 
     func close() {
