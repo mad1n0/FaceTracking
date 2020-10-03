@@ -8,6 +8,7 @@
 //#import "CSModelWriter.h"
 import SensingKit
 import SSZipArchive
+import Alamofire
 
 class FTModelWriter {
     let sensingKit = SensingKitLib.shared()
@@ -47,13 +48,13 @@ class FTModelWriter {
         let csv:String! = String(format:"%@\n", sensorData.csvString)
         NSLog("%@", csv)
         print(sensorData.csvString + "thisiscsvStrng")
-        createCSV(csvString: sensorData.csvString)
+        createCSV(csvString: sensorData.csvString, upload: true)
         //outputStream.write(sensorData.csvString)
         //NSDictionary *dictionary = sensorData.dictionaryData;
        // self.writeString(csv)
     }
     
-    func createCSV(csvString : String) {
+    func createCSV(csvString : String, upload: Bool) {
             do {
                 let path = getDocumentsDirectory()
                 let fileURL = URL(fileURLWithPath: "1", relativeTo: path).appendingPathExtension("csv")
@@ -61,7 +62,12 @@ class FTModelWriter {
                 var fileURLS = [String]()
                 fileURLS.append(fileURL.absoluteString)
                 try csvString.write(to: fileURL, atomically: true, encoding: .utf8)
+                
                 SSZipArchive.createZipFile(atPath: path.absoluteString, withFilesAtPaths: fileURLS)
+                
+                if upload {
+                    uploadToBackend(fileURL: fileURL)
+                }
                 let savedData = try Data(contentsOf: fileURL)
                 // Convert the data back into a string
                 if let savedString = String(data: savedData, encoding: .utf8) {
@@ -73,8 +79,28 @@ class FTModelWriter {
             catch {
                 print("error creating file")
             }
+        
+        
 
         }
+    
+    func uploadToBackend(fileURL: URL) {
+        AF.request("https://sensingkit-server.herokuapp.com/").response { response in
+            debugPrint("Response: \(response)")
+            
+            let data = Data("data".utf8)
+
+            AF.upload(data, to: "https://sensingkit-server.herokuapp.com/").response { response in
+                debugPrint(response)
+            }
+        }
+        do { let a = try AF.upload(Data(contentsOf: fileURL), to: "https://sensingkit-server.herokuapp.com/")
+            print (a)
+        }
+        catch {
+            print("no upload")
+        }
+    }
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
