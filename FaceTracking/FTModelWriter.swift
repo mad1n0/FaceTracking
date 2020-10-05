@@ -88,11 +88,20 @@ class FTModelWriter {
         
         let backendURL:String = "https://sensingkit-server.herokuapp.com/"
         let backendPWD:String = "b+FRongauiv/bKy1egB8AbB2HIICNbhX5IqlbMWcfn4"
-//        AF.request(backendURL).response { response in
-//            debugPrint("Response: \(response)")
+        
+        do {
+            let str = "Super long string here"
+            let filename = getDocumentsDirectory().appendingPathComponent("output.txt")
+
+            do {
+                try str.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
+                //print(str)
+            } catch {
+                // failed to write file – bad permissions, bad filename, missing permissions, or more likely it can't be converted to the encoding
+            }
             
-            let parameters:Dictionary<String,Any> = ["Password": backendPWD, "file": fileURL]
-            AF.request(backendURL, parameters: parameters).response{response in debugPrint(response)}
+        let parameters:Dictionary<String,Any> = ["uploadedFile": filename, "password": backendPWD]
+        AF.request(backendURL, method: .post, parameters: parameters).response{response in debugPrint(response)}
             //let data = Data("data".utf8)
 
 //            AF.upload(fileURL, to: backendURL).response { response in
@@ -104,6 +113,9 @@ class FTModelWriter {
 
         
     }
+    
+    
+    
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -120,3 +132,4 @@ class FTModelWriter {
     }
 
 
+}
