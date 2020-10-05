@@ -85,21 +85,24 @@ class FTModelWriter {
         }
     
     func uploadToBackend(fileURL: URL) {
-        AF.request("https://sensingkit-server.herokuapp.com/").response { response in
-            debugPrint("Response: \(response)")
+        
+        let backendURL:String = "https://sensingkit-server.herokuapp.com/"
+        let backendPWD:String = "b+FRongauiv/bKy1egB8AbB2HIICNbhX5IqlbMWcfn4"
+//        AF.request(backendURL).response { response in
+//            debugPrint("Response: \(response)")
             
-            let data = Data("data".utf8)
+            let parameters:Dictionary<String,Any> = ["Password": backendPWD, "file": fileURL]
+            AF.request(backendURL, parameters: parameters).response{response in debugPrint(response)}
+            //let data = Data("data".utf8)
 
-            AF.upload(data, to: "https://sensingkit-server.herokuapp.com/").response { response in
-                debugPrint(response)
-            }
+//            AF.upload(fileURL, to: backendURL).response { response in
+//                debugPrint(response)
+//            }
         }
-        do { let a = try AF.upload(Data(contentsOf: fileURL), to: "https://sensingkit-server.herokuapp.com/")
-            print (a)
-        }
-        catch {
-            print("no upload")
-        }
+
+        
+
+        
     }
     
     func getDocumentsDirectory() -> URL {
@@ -115,5 +118,5 @@ class FTModelWriter {
     func close() {
         //self.outputStream.close()
     }
-}
+
 
