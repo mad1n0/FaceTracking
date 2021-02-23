@@ -76,6 +76,9 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.setToolbarHidden(true, animated: false)
+        
         // Set the view's delegate
         sceneView.delegate = self
         sceneView.session.delegate=self
