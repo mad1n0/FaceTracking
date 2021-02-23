@@ -35,10 +35,12 @@
 		067C1BDECCA20D0D139176E1FBB73B33 /* ORKSpatialSpanMemoryContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = D6E58EB45B373AEF0DAAAA9C02397A70 /* ORKSpatialSpanMemoryContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		067E7938E98095F52FC88297CDE8E49E /* ORKAudioContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC220794B4BC2B75EFBD71544037423 /* ORKAudioContentView.m */; };
 		06F43EE1D20EF2167C71E66FE73FD992 /* ORKTappingIntervalStep.h in Headers */ = {isa = PBXBuildFile; fileRef = ED94596FBE98A72E5900EEE981434A0E /* ORKTappingIntervalStep.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		077E94FE851B9BA41A5E4FBD2EE4CDA3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5359E8FB322457653E676483AB72D7B1 /* Security.framework */; };
 		07A67CF4050E5A3D0A6C92566C0BE60D /* ORKDateTimePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 535AD7EEFB5A2F4ACBB68E51500A63D5 /* ORKDateTimePicker.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		080C91841D84D677271B6F56DC8E69EE /* ESSEddystone.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D43854E704985ACF0B57CA2E3F09D3 /* ESSEddystone.m */; };
 		084D1A3BEE89A24E4F8819E84F10A8AB /* ORKReviewStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341098BF6114061D45FA1DE8597FE76B /* ORKReviewStepViewController.m */; };
 		085EE8BFBCD635B6138C31D33C4FD33E /* ORKHealthKitPermissionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B393B37091E67B7779638DE4C530FDB /* ORKHealthKitPermissionType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		086167493B2F1BF627AE4B4EB99D0A88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
 		08DCDC7B88341B9B8FE4E07317D733C5 /* ORKActiveStepTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F99354EEA0EDA7D6B15E39941F8F104 /* ORKActiveStepTimer.m */; };
 		08E8F197D8D89C4D08D4066E484E40E9 /* ORKDataCollectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D6909815F1AF691E4B930653FD6045 /* ORKDataCollectionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0959794623BB02DD55B12AC642CD9A46 /* ORKPSATKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F68F8C6C941095AC7AC8CD5CDFF0CD /* ORKPSATKeyboardView.m */; };
@@ -167,7 +169,6 @@
 		22E29F1D1D81D09ED62B52B667E6D402 /* SKAbstractSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A70B28912D43E783541A3B2C02382 /* SKAbstractSensor.m */; };
 		22EA64527E7EEC16A3450806F8299A53 /* ORKScaleSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D22BA5B70DF45EBFBCEE583C03A0684 /* ORKScaleSlider.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		232296308F6D8854364DAEB7C031829F /* ORKImageSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A36F52D9A23AB281D828F7918DA5E0C4 /* ORKImageSelectionView.m */; };
-		23776C0E32B3F3C658DA3CA18942DBD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */; };
 		23815E99E6736D2FE3B8D5630AF36C94 /* ORKWaitStepView.h in Headers */ = {isa = PBXBuildFile; fileRef = 40135755B3E191D98CAD22235903A64C /* ORKWaitStepView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2391BE3D402F8BA281AA32DA8999A555 /* ORKHealthAnswerFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEBF9F7D3E8985DDDCB0770B3E3815B /* ORKHealthAnswerFormat.m */; };
 		24F203972E1FAD12BF15377B8B59B051 /* ORKVisualConsentStep.h in Headers */ = {isa = PBXBuildFile; fileRef = FB8FE318332B5AE958123FF1EC17903C /* ORKVisualConsentStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -184,6 +185,7 @@
 		27753AF2018E620671718823F1FDF02C /* ORKTouchAbilityPinchContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90312D1E775511221109D1779F7336BB /* ORKTouchAbilityPinchContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B321CE6A17C99DB333E4F3F47F7F769 /* DispatchQueue+Alamofire.swift */; };
 		283834A7EF5A69DDB3F30AC39AD15731 /* ORKBodyLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5519566A86C1913AB619B55B7A6FB162 /* ORKBodyLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		286AF13BD004AA956E604EA331C5DC99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
 		28CD62EFF97A1D169E5BDABFB14BFA7D /* mz_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 654B13C502418B2AAB0B4F717505812E /* mz_os_posix.c */; };
 		28DA1A8CDDC6F59A47F67FE6ADAC7160 /* ORKVisualConsentStepViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D9F70E7582D2E3DE8ADB0B74F84066 /* ORKVisualConsentStepViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		28EBF07833C54D52C17D0FEBD3F8BDC1 /* ORKSurveyAnswerCellForImageSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = B754D6D30FDDB70983C712768DD30AFC /* ORKSurveyAnswerCellForImageSelection.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -225,7 +227,6 @@
 		2FFF9D8B17295F38E33CF1934E27DA5E /* ORKTouchAbilityRotationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B6E03F9CBC3514B207B23F758CC271 /* ORKTouchAbilityRotationResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		304FBAA1354750E837BA93D485C678B5 /* ORKAccessibilityFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBC725F09FFD082744F935418E2086 /* ORKAccessibilityFunctions.m */; };
 		305B8B05563F27404909AFA1E8D2BB0F /* RecordARDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EBE7312EAD3CF5A97C0B5B13D2A1B /* RecordARDelegate.swift */; };
-		3066A1FDE02514DAFD97ACBC444EE50F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */; };
 		3100EBF72B048CAD6EEB51B8E875AA49 /* ORKReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C6CDAE292B318D5133C9E893ED2AA9 /* ORKReviewViewController.m */; };
 		311998586147F08FD19A28C13251FE9C /* consent_02@3x.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 2663C00DF19C21C8F4AC49E014B2F679 /* consent_02@3x.m4v */; };
 		319140432522CB380D06DDE6A14876B0 /* ORKQuestionResult_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F2DB7F1D3B0BA6B8D38B24D355CD5324 /* ORKQuestionResult_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -325,6 +326,7 @@
 		455D943C6E540F7E62C843295491332A /* ORKDeviceMotionRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB34C2D56BD46B6470297DA4E566A4 /* ORKDeviceMotionRecorder.m */; };
 		45AC40AD067926C5DA154DC46EE63706 /* ORKVerificationStepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B91CCF56808A80FC8080B4CE0639812 /* ORKVerificationStepView.m */; };
 		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BCB954D72ACFFEAD1655DC76AE772A /* MultipartFormData.swift */; };
+		464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
 		466FE1F080AD98AF633BA84DDC586639 /* zh_TW.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6E52FBAF5E5A6DD7737C6FAECA15680E /* zh_TW.lproj */; };
 		46B5F41F1B820A138F7F0B60AC38212F /* ORKLineGraphChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ED11A9A563198F942CA5D610DBBB2C /* ORKLineGraphChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46C1B96C07DD94FFC4A2444DB1CBB33A /* hi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3ED8B2F08517E879E0D047471C320634 /* hi.lproj */; };
@@ -334,7 +336,6 @@
 		47114CD66DB84519D1CE75203D5E5451 /* ORKFrontFacingCameraStepContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3CB1C8456555969EA022DAA91473A6 /* ORKFrontFacingCameraStepContentView.m */; };
 		4713B9A87912DDB74094773F578212DC /* ORKStep.h in Headers */ = {isa = PBXBuildFile; fileRef = D70E0F0C5C0D59CFF94B75F1E07B1C2D /* ORKStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4759C4741A1DAD9540A01A7DF461A320 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C398A93CC214E5A102D7ED53101B7 /* ARView.swift */; };
-		476D5F33E25386C60D6BD75C4FA97C67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */; };
 		4774047487369272C91F46730D121FE1 /* ORKTouchAbilitySwipeTrial.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D2BC4D75B01E3167C73B1AB7FE5C0E /* ORKTouchAbilitySwipeTrial.m */; };
 		47D8292E141848D91C99DF2B78BDE4CD /* ORKVideoCaptureStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E75156900A02B904C2C6941B29ED7B1 /* ORKVideoCaptureStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D847EAC663A84295AFB6263C2DF35D /* ServerTrustEvaluation.swift */; };
@@ -352,7 +353,6 @@
 		4BB4592DBD71D2F808F1B0C6874EE426 /* SKAccelerometerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D4CB9CFBAEB5512169E7A6BA0A2B5A /* SKAccelerometerConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BCA246A002EBC43044FF33DB8AB188B /* ORKFormSectionTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FD79CBEB583C242835BDC85A72264F /* ORKFormSectionTitleLabel.m */; };
 		4C38C9EEDDF5CEDD5E9CE8F50E98985A /* ORKTouchAbilitySwipeTrial.h in Headers */ = {isa = PBXBuildFile; fileRef = E1763926FF6974ED0598E2704D706EE1 /* ORKTouchAbilitySwipeTrial.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C4495AD0DA1C07DD26D07E4AEF344B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */; };
 		4C6AFB6DD707F1B70C2A03A2374B9B86 /* ORKCustomSignatureFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64EDC27D98B83C74AFDCD02EB8C3724C /* ORKCustomSignatureFooterView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4CEB8F1C33775873B8269DCABF157CD5 /* ORKLandoltCStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B42D15CF0AFA949F54B7EB00DD5D2E /* ORKLandoltCStepViewController.swift */; };
 		4D0E83668C3A89DBA76D0031022F1462 /* ORKAnswerFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F51DA7EDFB1CAC6F5447FFF34A81F2 /* ORKAnswerFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -385,7 +385,6 @@
 		530F2C006E66665C8897A4FCCB908269 /* ORKDiscreteGraphChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6931E1560CF380AEE9B4F086E8EDA4 /* ORKDiscreteGraphChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5366C4180413B263D82A1E36D555E410 /* ORKStroopStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9897AF0DA895CEB1F3A4F62C3C58DECE /* ORKStroopStepViewController.m */; };
 		53A4853EF9F48201C0765270C2DCD4E1 /* ORKToneAudiometryContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C404F0B2E2AE9E729BF728BF0F11BA6 /* ORKToneAudiometryContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		53BEFC324ACEF5E00A6F1A2213051FED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */; };
 		54000C2740D33A7EBE223F8EC37C1B19 /* UIBarButtonItem+ORKBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = EFFB2F461703FA6A35784EF2997AB0FE /* UIBarButtonItem+ORKBarButtonItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		544EA3DC771B517B24FBBB020E407739 /* ORKTouchAbilityPinchStep.m in Sources */ = {isa = PBXBuildFile; fileRef = F78BC6C273AABBA21B37D40777C522C9 /* ORKTouchAbilityPinchStep.m */; };
 		54AFA33BE55CB534AE4F6A5478680328 /* ORKTagLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4047FE3E802689B7F950EA91A5668922 /* ORKTagLabel.m */; };
@@ -510,6 +509,7 @@
 		6EE270A1355EA3600AB6626E1BE48EDE /* ORKFormSectionTitleLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 829E7C65CA2D33E11261535D245E7751 /* ORKFormSectionTitleLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6F749D2B21BF02C902F5012EA644088B /* ORKAmslerGridStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB6F1D0CABE8CAD669FF4022C8AA1E /* ORKAmslerGridStep.m */; };
 		70293D2557F0F2A7873EDE7E96872CF2 /* ORKCustomSignatureFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982760EEA76CD923DE184E33E1241A3 /* ORKCustomSignatureFooterView.m */; };
+		70E4020CA5868D3B88E7356CEAD51C86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
 		7119895C5F9768B8E1CD05D36F7D1687 /* ORKLineGraphChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52712084AF995F32180CDE4D4DE44FDD /* ORKLineGraphChartView.m */; };
 		71B6853F5B64D5A39F8EB5251A96C86A /* ORKAnswerTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 754483110720ACE98D6B0BFDD82A331D /* ORKAnswerTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		726E5E88F50BA7296EFD53828F8D36C3 /* ORKStepNavigationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F1A2ED8498592D6D5EA1EF2DC23FA9 /* ORKStepNavigationRule.m */; };
@@ -553,7 +553,6 @@
 		780B63800E1E8DFBEF7E5A6C94E63BEC /* ORKAudioStepViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D7CDBC9696F88D62560AC423EA3E6E4 /* ORKAudioStepViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		78B56DB927C0713304A74FCE0393B724 /* ORKSurveyCardHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 066926A2EE1BB32239CC7E5DB4E9F35D /* ORKSurveyCardHeaderView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		79A8C65B535F261468D4255E0C4F6DE9 /* SKBatteryConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 470E1569137F230E32586148C9E5B121 /* SKBatteryConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79F231007AC7A6733C4B80B4B9418500 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */; };
 		7A0D88B98C941A3671B41DC636015B7A /* ORKVideoInstructionStep.h in Headers */ = {isa = PBXBuildFile; fileRef = D279BD7215742959232ACD553F58AE2B /* ORKVideoInstructionStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AC21D736D8E992F37241233EFF9ECE6 /* ORKRequestPermissionsStepViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B16DA52DF056B9B4271111A0781B865 /* ORKRequestPermissionsStepViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7AF4B01D3AA80C5635DB47B158504D5E /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6EA43FF2F93388A2C95C496C9EAF30C3 /* ar.lproj */; };
@@ -592,6 +591,7 @@
 		82059D8FD2FE31AFEDC0954C68FFAE5C /* ORKTouchAbilityTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D8DD3CEDC4D42C6B07A0DE08B03C7B /* ORKTouchAbilityTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		821A082B7DB4A0BD4306E9AF158EA15F /* ORKSpatialSpanMemoryStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 901583F14892F03F88ABC65A5C808E9E /* ORKSpatialSpanMemoryStep.m */; };
 		825B6C41BAFD6D1C8A6B6DAF7F107B69 /* ORK3DModelStepViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C9ED74C515FA98655D91EB32449C2AB /* ORK3DModelStepViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		826390072AAF9E1AD0607A55BFA93B39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
 		829059776A7EC85B43C826E5FDDEBD15 /* ORKVideoInstructionStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7CA7B4F1150AA95B6F306BED79B06 /* ORKVideoInstructionStep.m */; };
 		82D2C1F95EA93E9C30867451B8F3D101 /* SKMicrophone.h in Headers */ = {isa = PBXBuildFile; fileRef = 62FACBC9EB1CF44373714600F24AAD75 /* SKMicrophone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82DE14948F6080BDF8129C299892D09A /* ORKVideoCaptureStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E1B2F731FBBD9D06B7BE5114A884EE /* ORKVideoCaptureStepViewController.m */; };
@@ -643,7 +643,6 @@
 		8C6CFF396BB7008BCF9E2A78E26797D2 /* ORKScaleValueLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = B361FAB7A44A1F16EA4CB6ADA2BACC82 /* ORKScaleValueLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8C73C082AE736E25436C27A1B5CAF29E /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DC07A78B436F0A6CF6710D8C0A362AB9 /* de.lproj */; };
 		8CB6C0125AB2976ED182167590D6F415 /* RenderARDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A8786D4B0D0297DFF2C3285AA6E23 /* RenderARDelegate.swift */; };
-		8D35D6FFDF5A3A57EFB2C77732B22C43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */; };
 		8D40525646956009C52FFA61C6861225 /* ORKTimedWalkResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 34237BA5257B6B2669305168F17F4A28 /* ORKTimedWalkResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D564AF153EA84E0336FCD2D09EED448 /* ORKAmslerGridStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6F0BFE1A29090A2247D0C676507AD0 /* ORKAmslerGridStep.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8D691FFB3BD39C90C00E5912CB2BA19B /* ORKdBHLToneAudiometryOnboardingStepViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E7393115FF22B8B67A225FD6D6CB01D5 /* ORKdBHLToneAudiometryOnboardingStepViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -690,7 +689,6 @@
 		95C1483750E7EE2FD0314BAC5681518A /* ORKTextFieldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 404B11F62775C0DB3D2FEF38A64B5BCF /* ORKTextFieldView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		961DD5ADCD484E712AE9BE2ED615413A /* ORKTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29016D1B0691F178E803ED146B89DA8 /* ORKTaskViewController.m */; };
 		9637AE23CD82F64AA8BB7824DBF34FEA /* ORKIconButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FA49EE43C67BF3D9205ECF7C15C7E8 /* ORKIconButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		963F29E4F3AFDADD943A255D49375ABC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */; };
 		967AB8C504445691E844824F1E808472 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 48ACBD3866FEFC7FCD9F66FB0A652668 /* pl.lproj */; };
 		9682D8684F7DDE549810CFECAC30B939 /* ORKAudioContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 164E1200D986CB0BEE79D070F0024411 /* ORKAudioContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		96A4B3F846C54E55DC56E49BD73D126F /* ORKVerificationStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D5A73F06765B4AF180AFF970CA5AE /* ORKVerificationStep.m */; };
@@ -709,6 +707,7 @@
 		98B77B28FE821786247AF6CEFC3C11F3 /* ORKResultPredicate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C9D485E2B4E7EC79EE8D35C7FEF6DE /* ORKResultPredicate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98D1EEB079BD730CB88262EB8280F006 /* ORKTouchAbilityScrollStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C248AF9D3B90C82B36264EF3B0E2A3D /* ORKTouchAbilityScrollStep.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		98F4BFE4E034F555510E289A9D76D9E7 /* ORKHealthSampleQueryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF09198A904C2615F35703AE194DDDC5 /* ORKHealthSampleQueryOperation.m */; };
+		98F6020499755D856D1C37935E053C6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
 		9917B13F5E6DF5E3401F0827BB96074A /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FE11517CF45C449D55AC66EA552C4875 /* cs.lproj */; };
 		991CC1EE2F25246747B4526CCF3CD54A /* ORK3DModelStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D726964C9B13ED2DA321925C8AE98C7 /* ORK3DModelStep.m */; };
 		992719AD9F065214F38F3E600EB1F8F7 /* ORKTouchAbilityPinchGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C335D253D1D1F5B3C66B87AE9388D6D /* ORKTouchAbilityPinchGuideView.m */; };
@@ -763,6 +762,7 @@
 		A6EDE1100CC72573CB74B1760F4EA0B3 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A453EB0A7A237F03A01D4F6241AE9468 /* unzip.c */; };
 		A71ACB47FBC1D9D05A895E81D7944FAE /* ORKImageCaptureStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9EEBF7C797FB710F2207656925B67 /* ORKImageCaptureStepViewController.m */; };
 		A733FF8DC37A5F272EF9FE3FD2E23BF1 /* ORKNavigablePageStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0239D22DD5BB468047A27FCD00B82D /* ORKNavigablePageStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC814063E47992E7A90FA41688C2A454 /* CFNetwork.framework */; };
 		A7AA1D18A5F0B56071ADF05E3A4935AE /* ORKPasscodeStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAE5A6E47FCB812DC7D971CE2A159D /* ORKPasscodeStep.m */; };
 		A7EF223FD0F030B4E0B2D22040239FD7 /* ORKActiveStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 4111A5BE95D9FD9D0FDD4C8CB1D028A7 /* ORKActiveStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7F4053B325CE3B7BB1894A01DE249B2 /* ORKTouchAbilityPinchStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CCDD992E9786F2A51D6DACEC25E9BF /* ORKTouchAbilityPinchStepViewController.m */; };
@@ -775,7 +775,6 @@
 		A95D418B4C78FF507459CC874583E98B /* ORKTouchAbilitySwipeStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF313161387DFFE341156C697D1A90C /* ORKTouchAbilitySwipeStep.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A9A1D43778AFC6FBED03946F6F1E17DA /* ORK3DModelStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992791E154075B5ACCE14F341F5144BA /* ORK3DModelStepViewController.m */; };
 		A9BDD6E351DC1238C016E672C8E78D55 /* ORKTouchAbilityLongPressContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = FF34DA84F12002118C839816919B0DC3 /* ORKTouchAbilityLongPressContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A9C7B29D4878F1690BBE3F8195CF0313 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BE90665B4A1053C5FF26D5289CBC83 /* CFNetwork.framework */; };
 		A9E0E9588F3963AE84F9EC448DBB58A5 /* ORKFitnessStep.m in Sources */ = {isa = PBXBuildFile; fileRef = FA959CC1242C3384766B15994BEDB736 /* ORKFitnessStep.m */; };
 		AA399E55346D853130B598AD99CEB306 /* ORKSpatialSpanTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E92E12B3F3D157675919B2A916E98 /* ORKSpatialSpanTargetView.m */; };
 		AB597B5563E951CFF832DA4DC97F531B /* en_AU.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DC7B1749A2A5B7F21F9DDBC7776D5E09 /* en_AU.lproj */; };
@@ -873,7 +872,6 @@
 		C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A765B3B7D640255C5092E7AEB7803A26 /* Response.swift */; };
 		C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6773ED337BF229A18D1E49607883837 /* Alamofire.swift */; };
 		C1F882B4221459939309BB941A12B2FF /* ORKLoginStep_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = CB8AAE750DB650006F620947A37EF3BD /* ORKLoginStep_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C297AC9431379391C114794AFD4F9778 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */; };
 		C2CABA51F5CF06EC367FE3870270C0A3 /* ORKEnvironmentSPLMeterStep.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E06937A58505E0B5B8D07A31C124E3 /* ORKEnvironmentSPLMeterStep.m */; };
 		C2F2668C9B0E988C7D1D9E62D90475E6 /* ORKTaskViewController_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = C37984DFFD0A7552A47AEEF4120799A9 /* ORKTaskViewController_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C304F510FC26F51B10885DAED0F01A56 /* ORKVideoInstructionStepResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B11301E836FFC63ED56DD4C92FB393 /* ORKVideoInstructionStepResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -901,6 +899,7 @@
 		C78A343787082FB982FE6092BB6097AF /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 28A609AE892EAB10E30811EF3A6AF5A7 /* da.lproj */; };
 		C7AE24A41AC078533180041626FE4B83 /* ORKPermissionType.m in Sources */ = {isa = PBXBuildFile; fileRef = DF13A81F84E1F81CF6FC88784B2AEEF4 /* ORKPermissionType.m */; };
 		C7B4393956DD26C2A2D337F0C06A8856 /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6B0C51D73DDD7DECE64E3D2F494E949A /* sv.lproj */; };
+		C7D918F4DD947396E77786015D9E4522 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
 		C7EBFD9E1734FEC85E565B8667115CF2 /* ORKImageCaptureStepViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 931393FF38067357B805D554718A3EFD /* ORKImageCaptureStepViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C846F9E1E3710D3FBDF5BF2A62D4112C /* ORKTouchAbilitySwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E49CAEDAF94127DBADA1A081DEC3AF /* ORKTouchAbilitySwipeResult.m */; };
 		C854232C5CAC46B13272B536DAF2D3DF /* ORKSecondaryTaskStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6AAFBB23473015FA8F358C560C38BD /* ORKSecondaryTaskStep.m */; };
@@ -1063,7 +1062,6 @@
 		EB0E387736D25A3925C44450F45C639B /* ORKTouchAbilityLongPressStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D4C65AD8882ED54FBF4E39002F8442 /* ORKTouchAbilityLongPressStep.m */; };
 		EB23C2AD2EF180568FB235B5FC1B4183 /* ORKSignatureResult_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F1B9BCAC4347BD9032A32FB06CAA0BE /* ORKSignatureResult_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EB2E7271F933AC30DBBF3227607B9637 /* ORKTouchAbilityRotationTrial.h in Headers */ = {isa = PBXBuildFile; fileRef = 631A67F82250859E6C572189FF1E265B /* ORKTouchAbilityRotationTrial.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB4320DEC9DDB9BF980D41BFBED044D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABAB7562D0623DFC2D01E0A09448472 /* Security.framework */; };
 		EB4467D6B957CD7A537B54C77D922256 /* ORKTouchAbilityLongPressResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11084EE057C4D0287D0A43A86363A1 /* ORKTouchAbilityLongPressResult.m */; };
 		EB53A69DE7DEF497001C87986B7C0293 /* ORKErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF67AEA1419A4ACC28B4E84EF9584D5 /* ORKErrors.m */; };
 		EB7EA55DAFF47A58A3F405FD32EDEDA5 /* ORKConsentSharingStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4BBF8E07A8B033FA54EA1CDABACD0 /* ORKConsentSharingStepViewController.m */; };
@@ -1105,6 +1103,7 @@
 		F4CFFD9EE69DE275E19FEB216036EB91 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF9B442C06F4AB79D99500B5432760C /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4EC2E231F7FDD6D142E61054D04736A /* ORKTouchAbilityContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 193D47673E64D18882CD0E6086F2E3CF /* ORKTouchAbilityContentView.m */; };
 		F4F078A4C0BEBC47FC68FE79E5FD14F7 /* SKLocationConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CB4ECBD58A2C01FB535D94F8E00D78 /* SKLocationConfiguration.m */; };
+		F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
 		F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F448DAD7FEFD2F1AAF286CFA6F162D2 /* URLSessionConfiguration+Alamofire.swift */; };
 		F715C062092BC25CE6187D96939BC937 /* SensingKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D423E57BFD91D470F6F0C67096B3E6D4 /* SensingKit-dummy.m */; };
 		F73EAF19B2DCD2934D01DC671AE64A80 /* ORKToneAudiometryStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 58498406A0E504266040D84232F684A4 /* ORKToneAudiometryStep.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -1137,6 +1136,7 @@
 		FC979E33FEA519CB99934E1C9D88C33E /* mz_strm_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = F58A1DEFA0DA521EC333ABAF40EADCA9 /* mz_strm_os_posix.c */; };
 		FD19F566257256BD9EA3F7E7442BB926 /* ORKConsentReviewStepViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FD18BF0048BC9680E887F8CF127733F5 /* ORKConsentReviewStepViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FD22C9AD69C558CA2223095A5714F6A2 /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F84145AB9BCC380F2E9A0EF2C52B77AA /* ms.lproj */; };
+		FD2B3628E904416ECD9F7E0B44B80DCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
 		FD305738F7DAF386289E5608AA94E372 /* ORKHolePegTestPlaceContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = C8E2DB263FE0512D27A36F71FE9193E7 /* ORKHolePegTestPlaceContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FD57526EF5A52D18AEE576497599C856 /* SKEddystoneProximityConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C67F4346904D34A9BFDB97C13CB79B5E /* SKEddystoneProximityConfiguration.m */; };
 		FD9DF6E3588EBA26E8FBF669F2FD3519 /* ORKTimedWalkContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2963C0657531477E49793804FCF8223F /* ORKTimedWalkContentView.m */; };
@@ -1590,6 +1590,7 @@
 		52712084AF995F32180CDE4D4DE44FDD /* ORKLineGraphChartView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKLineGraphChartView.m; path = ResearchKit/Charts/ORKLineGraphChartView.m; sourceTree = "<group>"; };
 		52F95F342D07F3BDC657863543A678BD /* ARVideoKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARVideoKit-prefix.pch"; sourceTree = "<group>"; };
 		52FF8EA4781B197653F8FD1A19EDE350 /* ORKAmslerGridStepViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKAmslerGridStepViewController.h; path = ResearchKit/ActiveTasks/ORKAmslerGridStepViewController.h; sourceTree = "<group>"; };
+		5359E8FB322457653E676483AB72D7B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		535AD7EEFB5A2F4ACBB68E51500A63D5 /* ORKDateTimePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKDateTimePicker.h; path = ResearchKit/Common/ORKDateTimePicker.h; sourceTree = "<group>"; };
 		53A0748E3BD57B37DEB37A3979ED15C4 /* SKErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKErrors.h; path = SensingKit/SKErrors.h; sourceTree = "<group>"; };
 		5411CE27DA13179CAA846DDBF363A9FF /* ORKTaskViewController_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKTaskViewController_Private.h; path = ResearchKit/Common/ORKTaskViewController_Private.h; sourceTree = "<group>"; };
@@ -1764,13 +1765,11 @@
 		7A96561B27370C1E6CC450AB91124A76 /* ORKTouchAbilitySwipeStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKTouchAbilitySwipeStep.m; path = ResearchKit/ActiveTasks/ORKTouchAbilitySwipeStep.m; sourceTree = "<group>"; };
 		7AB07A29EC39AE77B8EAED86EE13BA2D /* ResearchKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ResearchKit.modulemap; sourceTree = "<group>"; };
 		7AB2E86787D64E266E0B4AD0350DF1A4 /* ORKPieChartLegendView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKPieChartLegendView.m; path = ResearchKit/Charts/ORKPieChartLegendView.m; sourceTree = "<group>"; };
-		7ABAB7562D0623DFC2D01E0A09448472 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		7AE20C910F43065AB5D1B567342048FC /* ORKBodyItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKBodyItem.h; path = ResearchKit/Common/ORKBodyItem.h; sourceTree = "<group>"; };
 		7AE2260E33EADFF524F7F21F0203247C /* ORKTowerOfHanoiResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKTowerOfHanoiResult.h; path = ResearchKit/ActiveTasks/ORKTowerOfHanoiResult.h; sourceTree = "<group>"; };
 		7BE42074280064C114CB7E4C379A701A /* ORKTapCountLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKTapCountLabel.h; path = ResearchKit/Common/ORKTapCountLabel.h; sourceTree = "<group>"; };
 		7C335D253D1D1F5B3C66B87AE9388D6D /* ORKTouchAbilityPinchGuideView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKTouchAbilityPinchGuideView.m; path = ResearchKit/ActiveTasks/ORKTouchAbilityPinchGuideView.m; sourceTree = "<group>"; };
 		7C4ABCFBF0FE2F46A79F92463F2CB86A /* ORKSpatialSpanGame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKSpatialSpanGame.m; path = ResearchKit/ActiveTasks/ORKSpatialSpanGame.m; sourceTree = "<group>"; };
-		7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7CB9220A7E1B25662CC27CA86819ADAB /* SKiBeaconDeviceData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKiBeaconDeviceData.m; path = SensingKit/SKiBeaconDeviceData.m; sourceTree = "<group>"; };
 		7CB9ABF988FB7B35A73760EB7B8EAA3E /* ORKReviewStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKReviewStep.m; path = ResearchKit/Common/ORKReviewStep.m; sourceTree = "<group>"; };
 		7CF429D9D38C7FC05D661DA71382492B /* ORKTrailmakingStepViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKTrailmakingStepViewController.m; path = ResearchKit/ActiveTasks/ORKTrailmakingStepViewController.m; sourceTree = "<group>"; };
@@ -1972,7 +1971,6 @@
 		A4FE795D045AD0DC2CA7980D95ABF19B /* ORKTouchAbilityGestureRecoginzerEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKTouchAbilityGestureRecoginzerEvent.h; path = ResearchKit/ActiveTasks/ORKTouchAbilityGestureRecoginzerEvent.h; sourceTree = "<group>"; };
 		A555C08259BCB0354A6E60AC0385A962 /* ORKTouchAbilityTapResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKTouchAbilityTapResult.m; path = ResearchKit/ActiveTasks/ORKTouchAbilityTapResult.m; sourceTree = "<group>"; };
 		A67CB6FB077D556F5188F7476D5080E5 /* ORKSelectionSubTitleLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKSelectionSubTitleLabel.m; path = ResearchKit/Common/ORKSelectionSubTitleLabel.m; sourceTree = "<group>"; };
-		A6BE90665B4A1053C5FF26D5289CBC83 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		A6DE9CCDEE1C8CF8A191706D6320D95A /* SKPedometerConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKPedometerConfiguration.m; path = SensingKit/SKPedometerConfiguration.m; sourceTree = "<group>"; };
 		A743C2574F8B4D3AA93D0117E44895EF /* ORKSpatialSpanTargetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKSpatialSpanTargetView.h; path = ResearchKit/ActiveTasks/ORKSpatialSpanTargetView.h; sourceTree = "<group>"; };
 		A75A7F034911A53CD58FA328C4AEF0B8 /* ORKTimedWalkResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKTimedWalkResult.m; path = ResearchKit/ActiveTasks/ORKTimedWalkResult.m; sourceTree = "<group>"; };
@@ -2042,6 +2040,7 @@
 		B60D3C90021663FE749884B2A0A44695 /* ORKTowerOfHanoiStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKTowerOfHanoiStep.m; path = ResearchKit/ActiveTasks/ORKTowerOfHanoiStep.m; sourceTree = "<group>"; };
 		B644506EB01A8EAAC489CBE980DFF7A6 /* ORKTouchAbilitySwipeResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKTouchAbilitySwipeResult.h; path = ResearchKit/ActiveTasks/ORKTouchAbilitySwipeResult.h; sourceTree = "<group>"; };
 		B64CAEE49E5E703CE50904CA3FCFAA3D /* ORKPageStep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKPageStep.h; path = ResearchKit/Common/ORKPageStep.h; sourceTree = "<group>"; };
+		B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B6561511F60CD0C6F0B8C9051308616F /* ORK3DModelManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORK3DModelManager.h; path = ResearchKit/ActiveTasks/ORK3DModelManager.h; sourceTree = "<group>"; };
 		B6650C1E2BA5B9031E1C23FEAE24BD4B /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		B687506DE5958FAD455318110C88D4B0 /* ORKPasscodeStep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKPasscodeStep.h; path = ResearchKit/Common/ORKPasscodeStep.h; sourceTree = "<group>"; };
@@ -2137,6 +2136,7 @@
 		CC52B62484F488712B9D1A0804573AE6 /* ORKTouchAbilityLongPressStep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKTouchAbilityLongPressStep.h; path = ResearchKit/ActiveTasks/ORKTouchAbilityLongPressStep.h; sourceTree = "<group>"; };
 		CC610F874591007F523012BCA4B93FC0 /* SKBatteryData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKBatteryData.h; path = SensingKit/SKBatteryData.h; sourceTree = "<group>"; };
 		CC7E05382B42E66E36CFC5C381673AAC /* ORKFrontFacingCameraStepContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKFrontFacingCameraStepContentView.h; path = ResearchKit/ActiveTasks/ORKFrontFacingCameraStepContentView.h; sourceTree = "<group>"; };
+		CC814063E47992E7A90FA41688C2A454 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		CCD11BAB95882748DF1D036ABB7690FB /* ORKWebViewStep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKWebViewStep.h; path = ResearchKit/Common/ORKWebViewStep.h; sourceTree = "<group>"; };
 		CCF2E645B7E6ACA440AE89A11675F4D5 /* ORKConsentReviewStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKConsentReviewStep.m; path = ResearchKit/Consent/ORKConsentReviewStep.m; sourceTree = "<group>"; };
 		CD77307876A1B4C9F2C9C657B8189486 /* ORKHolePegTestRemoveStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKHolePegTestRemoveStep.m; path = ResearchKit/ActiveTasks/ORKHolePegTestRemoveStep.m; sourceTree = "<group>"; };
@@ -2401,7 +2401,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23776C0E32B3F3C658DA3CA18942DBD3 /* Foundation.framework in Frameworks */,
+				98F6020499755D856D1C37935E053C6C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2409,7 +2409,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4495AD0DA1C07DD26D07E4AEF344B7 /* Foundation.framework in Frameworks */,
+				086167493B2F1BF627AE4B4EB99D0A88 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2417,7 +2417,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963F29E4F3AFDADD943A255D49375ABC /* Foundation.framework in Frameworks */,
+				286AF13BD004AA956E604EA331C5DC99 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2425,7 +2425,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F231007AC7A6733C4B80B4B9418500 /* Foundation.framework in Frameworks */,
+				C7D918F4DD947396E77786015D9E4522 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2433,7 +2433,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53BEFC324ACEF5E00A6F1A2213051FED /* Foundation.framework in Frameworks */,
+				70E4020CA5868D3B88E7356CEAD51C86 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2441,8 +2441,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C7B29D4878F1690BBE3F8195CF0313 /* CFNetwork.framework in Frameworks */,
-				476D5F33E25386C60D6BD75C4FA97C67 /* Foundation.framework in Frameworks */,
+				A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */,
+				F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2450,7 +2450,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C297AC9431379391C114794AFD4F9778 /* Foundation.framework in Frameworks */,
+				464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2458,7 +2458,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3066A1FDE02514DAFD97ACBC444EE50F /* Foundation.framework in Frameworks */,
+				FD2B3628E904416ECD9F7E0B44B80DCA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2466,8 +2466,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D35D6FFDF5A3A57EFB2C77732B22C43 /* Foundation.framework in Frameworks */,
-				EB4320DEC9DDB9BF980D41BFBED044D1 /* Security.framework in Frameworks */,
+				826390072AAF9E1AD0607A55BFA93B39 /* Foundation.framework in Frameworks */,
+				077E94FE851B9BA41A5E4FBD2EE4CDA3 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2487,7 +2487,7 @@
 		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D5B250C191F0E4C7AD947CD0C88A0F4B /* iOS */,
+				BDB0DD9DF2184EAAFFD00F527DE67764 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2912,6 +2912,16 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		BDB0DD9DF2184EAAFFD00F527DE67764 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CC814063E47992E7A90FA41688C2A454 /* CFNetwork.framework */,
+				B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */,
+				5359E8FB322457653E676483AB72D7B1 /* Security.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		C45BABF87BF268321E7C2A8019405E9C /* ResearchKit */ = {
@@ -3790,16 +3800,6 @@
 				57DE458FC09558E954314E8646A61265 /* Products */,
 				ECACE3002CE00CE834315B004BE20FCA /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D5B250C191F0E4C7AD947CD0C88A0F4B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				A6BE90665B4A1053C5FF26D5289CBC83 /* CFNetwork.framework */,
-				7CB6704A70D55B80A3F7281F31BAE70C /* Foundation.framework */,
-				7ABAB7562D0623DFC2D01E0A09448472 /* Security.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		E2BDBC368E5AFA0B3C6FBCD3DB334B44 /* Alamofire */ = {
@@ -5453,11 +5453,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1336E2FE64D2CC400A81874254723A0F /* Debug */ = {
+		009DB1577F07B2FF797B78F2D1142134 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C1E09B98755816767B8DCAF5824A9A3 /* ResearchKit.debug.xcconfig */;
+			baseConfigurationReference = B238911A62018507D72C8E3F4F8A5066 /* SwiftyJSON.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -5466,87 +5466,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ResearchKit/ResearchKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ResearchKit/ResearchKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/ResearchKit/ResearchKit.modulemap";
-				PRODUCT_MODULE_NAME = ResearchKit;
-				PRODUCT_NAME = ResearchKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2444D36F2CB5FF3F9469EF5F6322EA10 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37670A1888348DC56F0D2751EAA9A45B /* Alamofire.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2BC4BC44D9B1DA72F0B5F42811D6A5A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D8A4622166DF4118EC807C8181A0C5B /* ZIPFoundation.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZIPFoundation/ZIPFoundation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation.modulemap";
-				PRODUCT_MODULE_NAME = ZIPFoundation;
-				PRODUCT_NAME = ZIPFoundation;
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -5557,44 +5488,11 @@
 			};
 			name = Debug;
 		};
-		2C82C83DAE273C246041BDBF7C84F06C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A51564788A9347B301EAAB30280311A /* SensingKit.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SensingKit/SensingKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SensingKit/SensingKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SensingKit/SensingKit.modulemap";
-				PRODUCT_MODULE_NAME = SensingKit;
-				PRODUCT_NAME = SensingKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		501C4DDF76F727E13770D67E891EDEF3 /* Release */ = {
+		0C9896C7563CB84B32833F4506F3096C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B773BF4D35A64EC895771273CE41E22 /* SwiftyJSON.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -5626,10 +5524,12 @@
 			};
 			name = Release;
 		};
-		503194676A749973CB8EC9430B768F83 /* Release */ = {
+		0D9622FC6BCE770FF7175D7FF7C0D9AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CCEEA9ED12911DF4A24AED2C3281ECD /* SensingKit.release.xcconfig */;
+			baseConfigurationReference = AE4B10063924506623E2BAE3DDF9E75B /* ResearchKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -5638,8 +5538,44 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SensingKit/SensingKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SensingKit/SensingKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ResearchKit/ResearchKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ResearchKit/ResearchKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ResearchKit/ResearchKit.modulemap";
+				PRODUCT_MODULE_NAME = ResearchKit;
+				PRODUCT_NAME = ResearchKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0F9C4DCFC37873C7D13777047BF46739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE82A36262F93D3A0467138DA54D92F3 /* Zip.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5647,9 +5583,46 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SensingKit/SensingKit.modulemap";
-				PRODUCT_MODULE_NAME = SensingKit;
-				PRODUCT_NAME = SensingKit;
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		475D09A8A8B3E864FEA073D6F5C61FD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA07841A49A6C86FC30D5156923D14D6 /* ARVideoKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARVideoKit/ARVideoKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARVideoKit/ARVideoKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ARVideoKit/ARVideoKit.modulemap";
+				PRODUCT_MODULE_NAME = ARVideoKit;
+				PRODUCT_NAME = ARVideoKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -5661,10 +5634,120 @@
 			};
 			name = Release;
 		};
-		5946E67FD6685F08F2411C1C7E3EA67B /* Release */ = {
+		54CFDBB2E7442AB54FA697B7EEFF7521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAB8802B6FB54E52113BD407E5C1DFC /* Pods-DeepSight.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeepSight/Pods-DeepSight-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeepSight/Pods-DeepSight.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D4349B1E2078F3924A094163C122AE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D6DCA7FF1B99DDBA6F044EC782B6CE7 /* SSZipArchive.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		69E98F6266670ABD1E5058B1D5A95107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FE0938CCF3BCC733CF2AC377D1548C /* ARVideoKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARVideoKit/ARVideoKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARVideoKit/ARVideoKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ARVideoKit/ARVideoKit.modulemap";
+				PRODUCT_MODULE_NAME = ARVideoKit;
+				PRODUCT_NAME = ARVideoKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75C3D1252ADE96EB48E00C3BAA79388D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1157EB15633E933D1880B6B6C3E95963 /* ZIPFoundation.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -5696,37 +5779,34 @@
 			};
 			name = Release;
 		};
-		74D99B3B558137A78F40580594AD97E5 /* Release */ = {
+		81C3046096BFC13BA4AFB22BEC1F9FDB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CAB8802B6FB54E52113BD407E5C1DFC /* Pods-DeepSight.release.xcconfig */;
+			baseConfigurationReference = DBE4772E096A3016B461C70C67AB7104 /* SSZipArchive.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DeepSight/Pods-DeepSight-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DeepSight/Pods-DeepSight.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -5734,12 +5814,13 @@
 			};
 			name = Release;
 		};
-		7A1B506C0FE27904C57BD74B98E910F9 /* Debug */ = {
+		88D70253BFC795AF0C138FAA226B4B99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E3C8DE019CC8C0CF3D5854B63148BC0 /* Pods-DeepSight.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -5771,42 +5852,7 @@
 			};
 			name = Debug;
 		};
-		873C90DE8F89E5CF4BF67DD7E1A896FB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3FE0938CCF3BCC733CF2AC377D1548C /* ARVideoKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ARVideoKit/ARVideoKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ARVideoKit/ARVideoKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ARVideoKit/ARVideoKit.modulemap";
-				PRODUCT_MODULE_NAME = ARVideoKit;
-				PRODUCT_NAME = ARVideoKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+		9677DB24B43B20E9D4C6BE25E4C472D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -5833,7 +5879,280 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B59A43BEA26997937796AE37175C6B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37670A1888348DC56F0D2751EAA9A45B /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2CC6A1060A0D62847BE3B2DB3662483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1E09B98755816767B8DCAF5824A9A3 /* ResearchKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ResearchKit/ResearchKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ResearchKit/ResearchKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ResearchKit/ResearchKit.modulemap";
+				PRODUCT_MODULE_NAME = ResearchKit;
+				PRODUCT_NAME = ResearchKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C53FD89433E38A6ECE0D73F0B1E45B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8A4622166DF4118EC807C8181A0C5B /* ZIPFoundation.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZIPFoundation/ZIPFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation.modulemap";
+				PRODUCT_MODULE_NAME = ZIPFoundation;
+				PRODUCT_NAME = ZIPFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE43A85B74530BD448F0B241AC0138C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A51564788A9347B301EAAB30280311A /* SensingKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SensingKit/SensingKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SensingKit/SensingKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SensingKit/SensingKit.modulemap";
+				PRODUCT_MODULE_NAME = SensingKit;
+				PRODUCT_NAME = SensingKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D30B3B440EA70683C9EF68391C3B5ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CCEEA9ED12911DF4A24AED2C3281ECD /* SensingKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SensingKit/SensingKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SensingKit/SensingKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SensingKit/SensingKit.modulemap";
+				PRODUCT_MODULE_NAME = SensingKit;
+				PRODUCT_NAME = SensingKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DCCB7B18D8A31D9A868DE58558271906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48CA3525424FF96F05CE215E0FC3F385 /* Zip.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF1E6CBB673468AD7C533B90F8ABFAF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -5872,11 +6191,12 @@
 			};
 			name = Debug;
 		};
-		9B66E952E27F29569285AB82461A2F34 /* Release */ = {
+		F51DAAA511BD47B058880847A3C2293E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6E8044666F03A87F9448F1A6BE9ADB4 /* Alamofire.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -5908,318 +6228,14 @@
 			};
 			name = Release;
 		};
-		9C50FA776872770B7552A45120B58640 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE4B10063924506623E2BAE3DDF9E75B /* ResearchKit.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ResearchKit/ResearchKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ResearchKit/ResearchKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ResearchKit/ResearchKit.modulemap";
-				PRODUCT_MODULE_NAME = ResearchKit;
-				PRODUCT_NAME = ResearchKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A6D1856327C32BF7B667BB2BEEAC10FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B238911A62018507D72C8E3F4F8A5066 /* SwiftyJSON.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B6F001088AA068E0CFF10231EF6C0CCD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBE4772E096A3016B461C70C67AB7104 /* SSZipArchive.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
-				PRODUCT_MODULE_NAME = SSZipArchive;
-				PRODUCT_NAME = SSZipArchive;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C1A9D4240D51BB84D738157FD28E7127 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D6DCA7FF1B99DDBA6F044EC782B6CE7 /* SSZipArchive.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
-				PRODUCT_MODULE_NAME = SSZipArchive;
-				PRODUCT_NAME = SSZipArchive;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CD546875A0B91177CB16885EB519298E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA07841A49A6C86FC30D5156923D14D6 /* ARVideoKit.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ARVideoKit/ARVideoKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ARVideoKit/ARVideoKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ARVideoKit/ARVideoKit.modulemap";
-				PRODUCT_MODULE_NAME = ARVideoKit;
-				PRODUCT_NAME = ARVideoKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E3993DDDE6B8D605B3B01CD567D63CB2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE82A36262F93D3A0467138DA54D92F3 /* Zip.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
-				PRODUCT_MODULE_NAME = Zip;
-				PRODUCT_NAME = Zip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F832C34454BD9C101F80E7810A851FAB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48CA3525424FF96F05CE215E0FC3F385 /* Zip.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
-				PRODUCT_MODULE_NAME = Zip;
-				PRODUCT_NAME = Zip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		07DD365C60B4E11A2B32D07A815A9E6F /* Build configuration list for PBXNativeTarget "ARVideoKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				873C90DE8F89E5CF4BF67DD7E1A896FB /* Debug */,
-				CD546875A0B91177CB16885EB519298E /* Release */,
+				69E98F6266670ABD1E5058B1D5A95107 /* Debug */,
+				475D09A8A8B3E864FEA073D6F5C61FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6227,8 +6243,8 @@
 		2E5E31FD449B316C6A8D8950A199B7BD /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C1A9D4240D51BB84D738157FD28E7127 /* Debug */,
-				B6F001088AA068E0CFF10231EF6C0CCD /* Release */,
+				5D4349B1E2078F3924A094163C122AE9 /* Debug */,
+				81C3046096BFC13BA4AFB22BEC1F9FDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6236,8 +6252,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
-				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+				EF1E6CBB673468AD7C533B90F8ABFAF7 /* Debug */,
+				9677DB24B43B20E9D4C6BE25E4C472D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6245,8 +6261,8 @@
 		62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6D1856327C32BF7B667BB2BEEAC10FA /* Debug */,
-				501C4DDF76F727E13770D67E891EDEF3 /* Release */,
+				009DB1577F07B2FF797B78F2D1142134 /* Debug */,
+				0C9896C7563CB84B32833F4506F3096C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6254,8 +6270,8 @@
 		78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2444D36F2CB5FF3F9469EF5F6322EA10 /* Debug */,
-				9B66E952E27F29569285AB82461A2F34 /* Release */,
+				B59A43BEA26997937796AE37175C6B0D /* Debug */,
+				F51DAAA511BD47B058880847A3C2293E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6263,8 +6279,8 @@
 		AADE132E33070DFA47CD5D0C857E862E /* Build configuration list for PBXNativeTarget "ZIPFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BC4BC44D9B1DA72F0B5F42811D6A5A3 /* Debug */,
-				5946E67FD6685F08F2411C1C7E3EA67B /* Release */,
+				C53FD89433E38A6ECE0D73F0B1E45B3F /* Debug */,
+				75C3D1252ADE96EB48E00C3BAA79388D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6272,8 +6288,8 @@
 		AC154F85CB8D9B9002A279186CE3F94C /* Build configuration list for PBXNativeTarget "Zip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F832C34454BD9C101F80E7810A851FAB /* Debug */,
-				E3993DDDE6B8D605B3B01CD567D63CB2 /* Release */,
+				DCCB7B18D8A31D9A868DE58558271906 /* Debug */,
+				0F9C4DCFC37873C7D13777047BF46739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6281,8 +6297,8 @@
 		C71AA7875982C30298D8AE094B08DDA4 /* Build configuration list for PBXNativeTarget "SensingKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C82C83DAE273C246041BDBF7C84F06C /* Debug */,
-				503194676A749973CB8EC9430B768F83 /* Release */,
+				CE43A85B74530BD448F0B241AC0138C2 /* Debug */,
+				D30B3B440EA70683C9EF68391C3B5ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6290,8 +6306,8 @@
 		D5658070CFEFAD1131E910567910F072 /* Build configuration list for PBXNativeTarget "Pods-DeepSight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7A1B506C0FE27904C57BD74B98E910F9 /* Debug */,
-				74D99B3B558137A78F40580594AD97E5 /* Release */,
+				88D70253BFC795AF0C138FAA226B4B99 /* Debug */,
+				54CFDBB2E7442AB54FA697B7EEFF7521 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6299,8 +6315,8 @@
 		DD2F26D5CAB6E97B9E8158984C762696 /* Build configuration list for PBXNativeTarget "ResearchKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1336E2FE64D2CC400A81874254723A0F /* Debug */,
-				9C50FA776872770B7552A45120B58640 /* Release */,
+				C2CC6A1060A0D62847BE3B2DB3662483 /* Debug */,
+				0D9622FC6BCE770FF7175D7FF7C0D9AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
