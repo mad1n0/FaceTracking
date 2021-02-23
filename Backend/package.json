@@ -1,0 +1,20 @@
+{
+  "name": "deepsight-backend",
+  "version": "0.0.1",
+  "description": "DeepSight Simple Backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "connect-busboy": "0.0.2",
+    "connect-timeout": "^1.9.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.7",
+    "path": "^0.12.7"
+  }
+}

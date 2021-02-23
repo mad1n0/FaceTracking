@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43011D36257A474D00AC6301 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43011D35257A474D00AC6301 /* MainViewController.swift */; };
+		43011D3D257A485200AC6301 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43011D3B257A485200AC6301 /* Slide.xib */; };
+		43011D3E257A485200AC6301 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43011D3C257A485200AC6301 /* Slide.swift */; };
+		4339B96D2577ACD8004B239F /* JSONWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4339B96B2577ACD8004B239F /* JSONWriter.m */; };
+		438CF975252F14230049CE57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438CF974252F14230049CE57 /* AppDelegate.swift */; };
+		438CF977252F14230049CE57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438CF976252F14230049CE57 /* SceneDelegate.swift */; };
+		438CF979252F14230049CE57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438CF978252F14230049CE57 /* ViewController.swift */; };
+		438CF97C252F14230049CE57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438CF97A252F14230049CE57 /* Main.storyboard */; };
+		438CF97F252F14230049CE57 /* DeepSight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 438CF97D252F14230049CE57 /* DeepSight.xcdatamodeld */; };
+		438CF981252F14250049CE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438CF980252F14250049CE57 /* Assets.xcassets */; };
+		438CF984252F14250049CE57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438CF982252F14250049CE57 /* LaunchScreen.storyboard */; };
+		438CF98F252F14250049CE57 /* DeepSightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438CF98E252F14250049CE57 /* DeepSightTests.swift */; };
+		438CF99A252F14250049CE57 /* DeepSightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438CF999252F14250049CE57 /* DeepSightUITests.swift */; };
+		43A8CF832580FB5F00ECA0D2 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8CF822580FB5F00ECA0D2 /* ConsentTask.swift */; };
+		43A8CF912580FBDC00ECA0D2 /* RegistrationConsentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8CF902580FBDC00ECA0D2 /* RegistrationConsentFormViewController.swift */; };
+		43A8CF962581089500ECA0D2 /* RegistrationMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8CF952581089500ECA0D2 /* RegistrationMainViewController.swift */; };
+		43A8CF9E25810C1F00ECA0D2 /* RegistrationReadyToGoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8CF9D25810C1F00ECA0D2 /* RegistrationReadyToGoViewController.swift */; };
+		43B6CCBE25B59E5200C0ECE5 /* consent.html in Resources */ = {isa = PBXBuildFile; fileRef = 43B6CCBD25B59E5200C0ECE5 /* consent.html */; };
+		43B6CCD925B59F1300C0ECE5 /* visual_consent.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B6CCD825B59F1300C0ECE5 /* visual_consent.json */; };
+		5824E80AFD0653A6E4CBDFBB /* Pods_DeepSight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC00FCED57ACC61B72CB66CD /* Pods_DeepSight.framework */; };
+		982D7D262577A940009EB39E /* transformvisualization2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D7D252577A940009EB39E /* transformvisualization2.swift */; };
+		982D7D2B2577A971009EB39E /* virtualcontent2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D7D2A2577A971009EB39E /* virtualcontent2.swift */; };
+		9844029A2548537800081C9E /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 984402992548537800081C9E /* Models.scnassets */; };
+		984402A0254853BD00081C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9844029F254853BD00081C9E /* Assets.xcassets */; };
+		984402A925485BC100081C9E /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984402A825485BC100081C9E /* AR.storyboard */; };
+		9862152F253DC57E00B44237 /* CSModelWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9862152E253DC57E00B44237 /* CSModelWriter.m */; };
+		989BA88425CC58A100D001A5 /* gridmatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989BA88325CC58A100D001A5 /* gridmatrix.swift */; };
+		98A9B9F1252F44A300132BC9 /* FTModelWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9B9F0252F44A300132BC9 /* FTModelWriter.swift */; };
+		98A9B9F6252F44AB00132BC9 /* FTSensingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9B9F5252F44AB00132BC9 /* FTSensingSession.swift */; };
+		98C7C4182551BF8900780A66 /* SCNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7C4172551BF8900780A66 /* SCNViewController.swift */; };
+		98C7C44E255A9BD900780A66 /* JSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7C44D255A9BD900780A66 /* JSONSerialization.swift */; };
+		98D01BEF2582861200964B9B /* CommsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D01BEE2582861200964B9B /* CommsManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		438CF98B252F14250049CE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 438CF969252F14230049CE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 438CF970252F14230049CE57;
+			remoteInfo = DeepSight;
+		};
+		438CF996252F14250049CE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 438CF969252F14230049CE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 438CF970252F14230049CE57;
+			remoteInfo = DeepSight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		216C96ACE94708ECF3BEB043 /* Pods-DeepSight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepSight.release.xcconfig"; path = "Target Support Files/Pods-DeepSight/Pods-DeepSight.release.xcconfig"; sourceTree = "<group>"; };
+		43011D35257A474D00AC6301 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		43011D3B257A485200AC6301 /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		43011D3C257A485200AC6301 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		4339B96B2577ACD8004B239F /* JSONWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONWriter.m; sourceTree = "<group>"; };
+		4339B96C2577ACD8004B239F /* JSONWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONWriter.h; sourceTree = "<group>"; };
+		438CF971252F14230049CE57 /* DeepSight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepSight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		438CF974252F14230049CE57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		438CF976252F14230049CE57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		438CF978252F14230049CE57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		438CF97B252F14230049CE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		438CF97E252F14230049CE57 /* DeepSight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepSight.xcdatamodel; sourceTree = "<group>"; };
+		438CF980252F14250049CE57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		438CF983252F14250049CE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		438CF985252F14250049CE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438CF98A252F14250049CE57 /* DeepSightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		438CF98E252F14250049CE57 /* DeepSightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSightTests.swift; sourceTree = "<group>"; };
+		438CF990252F14250049CE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438CF995252F14250049CE57 /* DeepSightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		438CF999252F14250049CE57 /* DeepSightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSightUITests.swift; sourceTree = "<group>"; };
+		438CF99B252F14250049CE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A8CF822580FB5F00ECA0D2 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		43A8CF902580FBDC00ECA0D2 /* RegistrationConsentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationConsentFormViewController.swift; sourceTree = "<group>"; };
+		43A8CF952581089500ECA0D2 /* RegistrationMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationMainViewController.swift; sourceTree = "<group>"; };
+		43A8CF9D25810C1F00ECA0D2 /* RegistrationReadyToGoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationReadyToGoViewController.swift; sourceTree = "<group>"; };
+		43B6CCBD25B59E5200C0ECE5 /* consent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = consent.html; sourceTree = "<group>"; };
+		43B6CCD825B59F1300C0ECE5 /* visual_consent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = visual_consent.json; sourceTree = "<group>"; };
+		858CE5370CEE9EE3DA7D25AE /* Pods-DeepSight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepSight.debug.xcconfig"; path = "Target Support Files/Pods-DeepSight/Pods-DeepSight.debug.xcconfig"; sourceTree = "<group>"; };
+		982D7D252577A940009EB39E /* transformvisualization2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transformvisualization2.swift; sourceTree = "<group>"; };
+		982D7D2A2577A971009EB39E /* virtualcontent2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = virtualcontent2.swift; sourceTree = "<group>"; };
+		984402992548537800081C9E /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		9844029F254853BD00081C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		984402A825485BC100081C9E /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
+		9862152C253DC56D00B44237 /* CSModelWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSModelWriter.h; sourceTree = "<group>"; };
+		9862152D253DC57D00B44237 /* DeepSight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeepSight-Bridging-Header.h"; sourceTree = "<group>"; };
+		9862152E253DC57E00B44237 /* CSModelWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSModelWriter.m; sourceTree = "<group>"; };
+		98621533253DC5C600B44237 /* DeepSight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeepSight-Bridging-Header.h"; sourceTree = "<group>"; };
+		989BA88325CC58A100D001A5 /* gridmatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridmatrix.swift; sourceTree = "<group>"; };
+		98A9B9F0252F44A300132BC9 /* FTModelWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTModelWriter.swift; sourceTree = "<group>"; };
+		98A9B9F5252F44AB00132BC9 /* FTSensingSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTSensingSession.swift; sourceTree = "<group>"; };
+		98C7C4172551BF8900780A66 /* SCNViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNViewController.swift; sourceTree = "<group>"; };
+		98C7C44D255A9BD900780A66 /* JSONSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerialization.swift; sourceTree = "<group>"; };
+		98D01BEE2582861200964B9B /* CommsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommsManager.swift; sourceTree = "<group>"; };
+		EC00FCED57ACC61B72CB66CD /* Pods_DeepSight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepSight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		438CF96E252F14230049CE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5824E80AFD0653A6E4CBDFBB /* Pods_DeepSight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438CF987252F14250049CE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438CF992252F14250049CE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43011D3A257A483600AC6301 /* Registration Screen */ = {
+			isa = PBXGroup;
+			children = (
+				43A8CF952581089500ECA0D2 /* RegistrationMainViewController.swift */,
+				43A8CF902580FBDC00ECA0D2 /* RegistrationConsentFormViewController.swift */,
+				43A8CF9D25810C1F00ECA0D2 /* RegistrationReadyToGoViewController.swift */,
+				43A8CF7C2580FB4E00ECA0D2 /* Consent */,
+				43011D3C257A485200AC6301 /* Slide.swift */,
+				43011D3B257A485200AC6301 /* Slide.xib */,
+			);
+			path = "Registration Screen";
+			sourceTree = "<group>";
+		};
+		438CF968252F14230049CE57 = {
+			isa = PBXGroup;
+			children = (
+				438CF973252F14230049CE57 /* DeepSight */,
+				438CF98D252F14250049CE57 /* DeepSightTests */,
+				438CF998252F14250049CE57 /* DeepSightUITests */,
+				438CF972252F14230049CE57 /* Products */,
+				D6D622A2B58D303630E1D28D /* Pods */,
+				97FAC8F3031BB86683047B23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		438CF972252F14230049CE57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				438CF971252F14230049CE57 /* DeepSight.app */,
+				438CF98A252F14250049CE57 /* DeepSightTests.xctest */,
+				438CF995252F14250049CE57 /* DeepSightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		438CF973252F14230049CE57 /* DeepSight */ = {
+			isa = PBXGroup;
+			children = (
+				438CF974252F14230049CE57 /* AppDelegate.swift */,
+				438CF976252F14230049CE57 /* SceneDelegate.swift */,
+				438CF978252F14230049CE57 /* ViewController.swift */,
+				98C7C4172551BF8900780A66 /* SCNViewController.swift */,
+				989BA88325CC58A100D001A5 /* gridmatrix.swift */,
+				98C7C44D255A9BD900780A66 /* JSONSerialization.swift */,
+				982D7D252577A940009EB39E /* transformvisualization2.swift */,
+				982D7D2A2577A971009EB39E /* virtualcontent2.swift */,
+				98A9B9F5252F44AB00132BC9 /* FTSensingSession.swift */,
+				98D01BEE2582861200964B9B /* CommsManager.swift */,
+				98A9B9F0252F44A300132BC9 /* FTModelWriter.swift */,
+				4339B96C2577ACD8004B239F /* JSONWriter.h */,
+				4339B96B2577ACD8004B239F /* JSONWriter.m */,
+				9862152C253DC56D00B44237 /* CSModelWriter.h */,
+				9862152E253DC57E00B44237 /* CSModelWriter.m */,
+				98621533253DC5C600B44237 /* DeepSight-Bridging-Header.h */,
+				9844029E2548538A00081C9E /* Resources */,
+				438CF97A252F14230049CE57 /* Main.storyboard */,
+				43011D35257A474D00AC6301 /* MainViewController.swift */,
+				43011D3A257A483600AC6301 /* Registration Screen */,
+				438CF980252F14250049CE57 /* Assets.xcassets */,
+				438CF982252F14250049CE57 /* LaunchScreen.storyboard */,
+				438CF985252F14250049CE57 /* Info.plist */,
+				438CF97D252F14230049CE57 /* DeepSight.xcdatamodeld */,
+				9862152D253DC57D00B44237 /* DeepSight-Bridging-Header.h */,
+			);
+			path = DeepSight;
+			sourceTree = "<group>";
+		};
+		438CF98D252F14250049CE57 /* DeepSightTests */ = {
+			isa = PBXGroup;
+			children = (
+				438CF98E252F14250049CE57 /* DeepSightTests.swift */,
+				438CF990252F14250049CE57 /* Info.plist */,
+			);
+			path = DeepSightTests;
+			sourceTree = "<group>";
+		};
+		438CF998252F14250049CE57 /* DeepSightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				438CF999252F14250049CE57 /* DeepSightUITests.swift */,
+				438CF99B252F14250049CE57 /* Info.plist */,
+			);
+			path = DeepSightUITests;
+			sourceTree = "<group>";
+		};
+		43A8CF7C2580FB4E00ECA0D2 /* Consent */ = {
+			isa = PBXGroup;
+			children = (
+				43A8CF822580FB5F00ECA0D2 /* ConsentTask.swift */,
+				43B6CCD825B59F1300C0ECE5 /* visual_consent.json */,
+				43B6CCBD25B59E5200C0ECE5 /* consent.html */,
+			);
+			path = Consent;
+			sourceTree = "<group>";
+		};
+		97FAC8F3031BB86683047B23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC00FCED57ACC61B72CB66CD /* Pods_DeepSight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9844029E2548538A00081C9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				984402A825485BC100081C9E /* AR.storyboard */,
+				9844029F254853BD00081C9E /* Assets.xcassets */,
+				984402992548537800081C9E /* Models.scnassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D6D622A2B58D303630E1D28D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				858CE5370CEE9EE3DA7D25AE /* Pods-DeepSight.debug.xcconfig */,
+				216C96ACE94708ECF3BEB043 /* Pods-DeepSight.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		438CF970252F14230049CE57 /* DeepSight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438CF99E252F14250049CE57 /* Build configuration list for PBXNativeTarget "DeepSight" */;
+			buildPhases = (
+				423115ED603DAA39582AA42D /* [CP] Check Pods Manifest.lock */,
+				438CF96D252F14230049CE57 /* Sources */,
+				438CF96E252F14230049CE57 /* Frameworks */,
+				438CF96F252F14230049CE57 /* Resources */,
+				7285E55D09ED702A231FFFB2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepSight;
+			productName = DeepSight;
+			productReference = 438CF971252F14230049CE57 /* DeepSight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		438CF989252F14250049CE57 /* DeepSightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438CF9A1252F14250049CE57 /* Build configuration list for PBXNativeTarget "DeepSightTests" */;
+			buildPhases = (
+				438CF986252F14250049CE57 /* Sources */,
+				438CF987252F14250049CE57 /* Frameworks */,
+				438CF988252F14250049CE57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				438CF98C252F14250049CE57 /* PBXTargetDependency */,
+			);
+			name = DeepSightTests;
+			productName = DeepSightTests;
+			productReference = 438CF98A252F14250049CE57 /* DeepSightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		438CF994252F14250049CE57 /* DeepSightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438CF9A4252F14250049CE57 /* Build configuration list for PBXNativeTarget "DeepSightUITests" */;
+			buildPhases = (
+				438CF991252F14250049CE57 /* Sources */,
+				438CF992252F14250049CE57 /* Frameworks */,
+				438CF993252F14250049CE57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				438CF997252F14250049CE57 /* PBXTargetDependency */,
+			);
+			name = DeepSightUITests;
+			productName = DeepSightUITests;
+			productReference = 438CF995252F14250049CE57 /* DeepSightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		438CF969252F14230049CE57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					438CF970252F14230049CE57 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+					};
+					438CF989252F14250049CE57 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 438CF970252F14230049CE57;
+					};
+					438CF994252F14250049CE57 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 438CF970252F14230049CE57;
+					};
+				};
+			};
+			buildConfigurationList = 438CF96C252F14230049CE57 /* Build configuration list for PBXProject "DeepSight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 438CF968252F14230049CE57;
+			productRefGroup = 438CF972252F14230049CE57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				438CF970252F14230049CE57 /* DeepSight */,
+				438CF989252F14250049CE57 /* DeepSightTests */,
+				438CF994252F14250049CE57 /* DeepSightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		438CF96F252F14230049CE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B6CCBE25B59E5200C0ECE5 /* consent.html in Resources */,
+				438CF984252F14250049CE57 /* LaunchScreen.storyboard in Resources */,
+				9844029A2548537800081C9E /* Models.scnassets in Resources */,
+				438CF981252F14250049CE57 /* Assets.xcassets in Resources */,
+				43011D3D257A485200AC6301 /* Slide.xib in Resources */,
+				984402A925485BC100081C9E /* AR.storyboard in Resources */,
+				43B6CCD925B59F1300C0ECE5 /* visual_consent.json in Resources */,
+				438CF97C252F14230049CE57 /* Main.storyboard in Resources */,
+				984402A0254853BD00081C9E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438CF988252F14250049CE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438CF993252F14250049CE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		423115ED603DAA39582AA42D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeepSight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7285E55D09ED702A231FFFB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeepSight/Pods-DeepSight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeepSight/Pods-DeepSight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeepSight/Pods-DeepSight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		438CF96D252F14230049CE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989BA88425CC58A100D001A5 /* gridmatrix.swift in Sources */,
+				43A8CF9E25810C1F00ECA0D2 /* RegistrationReadyToGoViewController.swift in Sources */,
+				982D7D2B2577A971009EB39E /* virtualcontent2.swift in Sources */,
+				43011D36257A474D00AC6301 /* MainViewController.swift in Sources */,
+				98C7C4182551BF8900780A66 /* SCNViewController.swift in Sources */,
+				98A9B9F6252F44AB00132BC9 /* FTSensingSession.swift in Sources */,
+				98D01BEF2582861200964B9B /* CommsManager.swift in Sources */,
+				438CF979252F14230049CE57 /* ViewController.swift in Sources */,
+				438CF975252F14230049CE57 /* AppDelegate.swift in Sources */,
+				98A9B9F1252F44A300132BC9 /* FTModelWriter.swift in Sources */,
+				4339B96D2577ACD8004B239F /* JSONWriter.m in Sources */,
+				43A8CF962581089500ECA0D2 /* RegistrationMainViewController.swift in Sources */,
+				982D7D262577A940009EB39E /* transformvisualization2.swift in Sources */,
+				98C7C44E255A9BD900780A66 /* JSONSerialization.swift in Sources */,
+				438CF977252F14230049CE57 /* SceneDelegate.swift in Sources */,
+				43011D3E257A485200AC6301 /* Slide.swift in Sources */,
+				43A8CF832580FB5F00ECA0D2 /* ConsentTask.swift in Sources */,
+				9862152F253DC57E00B44237 /* CSModelWriter.m in Sources */,
+				43A8CF912580FBDC00ECA0D2 /* RegistrationConsentFormViewController.swift in Sources */,
+				438CF97F252F14230049CE57 /* DeepSight.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438CF986252F14250049CE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438CF98F252F14250049CE57 /* DeepSightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438CF991252F14250049CE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438CF99A252F14250049CE57 /* DeepSightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		438CF98C252F14250049CE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 438CF970252F14230049CE57 /* DeepSight */;
+			targetProxy = 438CF98B252F14250049CE57 /* PBXContainerItemProxy */;
+		};
+		438CF997252F14250049CE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 438CF970252F14230049CE57 /* DeepSight */;
+			targetProxy = 438CF996252F14250049CE57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		438CF97A252F14230049CE57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				438CF97B252F14230049CE57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		438CF982252F14250049CE57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				438CF983252F14250049CE57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		438CF99C252F14250049CE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		438CF99D252F14250049CE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		438CF99F252F14250049CE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 858CE5370CEE9EE3DA7D25AE /* Pods-DeepSight.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T92P8D3FB;
+				INFOPLIST_FILE = DeepSight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sensingkit.DeepSight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeepSight/DeepSight-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		438CF9A0252F14250049CE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216C96ACE94708ECF3BEB043 /* Pods-DeepSight.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T92P8D3FB;
+				INFOPLIST_FILE = DeepSight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sensingkit.DeepSight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeepSight/DeepSight-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		438CF9A2252F14250049CE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T92P8D3FB;
+				INFOPLIST_FILE = DeepSightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sensingkit.org.DeepSightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepSight.app/DeepSight";
+			};
+			name = Debug;
+		};
+		438CF9A3252F14250049CE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T92P8D3FB;
+				INFOPLIST_FILE = DeepSightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sensingkit.org.DeepSightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepSight.app/DeepSight";
+			};
+			name = Release;
+		};
+		438CF9A5252F14250049CE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T92P8D3FB;
+				INFOPLIST_FILE = DeepSightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sensingkit.org.DeepSightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeepSight;
+			};
+			name = Debug;
+		};
+		438CF9A6252F14250049CE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T92P8D3FB;
+				INFOPLIST_FILE = DeepSightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sensingkit.org.DeepSightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeepSight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		438CF96C252F14230049CE57 /* Build configuration list for PBXProject "DeepSight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438CF99C252F14250049CE57 /* Debug */,
+				438CF99D252F14250049CE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438CF99E252F14250049CE57 /* Build configuration list for PBXNativeTarget "DeepSight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438CF99F252F14250049CE57 /* Debug */,
+				438CF9A0252F14250049CE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438CF9A1252F14250049CE57 /* Build configuration list for PBXNativeTarget "DeepSightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438CF9A2252F14250049CE57 /* Debug */,
+				438CF9A3252F14250049CE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438CF9A4252F14250049CE57 /* Build configuration list for PBXNativeTarget "DeepSightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438CF9A5252F14250049CE57 /* Debug */,
+				438CF9A6252F14250049CE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		438CF97D252F14230049CE57 /* DeepSight.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				438CF97E252F14230049CE57 /* DeepSight.xcdatamodel */,
+			);
+			currentVersion = 438CF97E252F14230049CE57 /* DeepSight.xcdatamodel */;
+			path = DeepSight.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 438CF969252F14230049CE57 /* Project object */;
+}

@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-DeepSight/Pods-DeepSight-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ARVideoKit/ARVideoKit.framework
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/ResearchKit/ResearchKit.framework
+${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework
+${BUILT_PRODUCTS_DIR}/SensingKit/SensingKit.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework
+${BUILT_PRODUCTS_DIR}/Zip/Zip.framework

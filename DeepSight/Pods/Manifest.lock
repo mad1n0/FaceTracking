@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (5.4.1)
+  - ARVideoKit (1.6.0)
+  - ResearchKit (2.1.0-beta)
+  - SensingKit (0.5.1)
+  - SSZipArchive (2.2.3)
+  - SwiftyJSON (5.0.0)
+  - Zip (2.1.1)
+  - ZIPFoundation (0.9.11)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - ARVideoKit (from `https://github.com/mad1n0/ARVideoKit`, branch `swift_5`)
+  - ResearchKit (from `https://github.com/ResearchKit/ResearchKit.git`, branch `master`)
+  - SensingKit
+  - SSZipArchive
+  - SwiftyJSON
+  - Zip
+  - ZIPFoundation
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SensingKit
+    - SSZipArchive
+    - SwiftyJSON
+    - Zip
+    - ZIPFoundation
+
+EXTERNAL SOURCES:
+  ARVideoKit:
+    :branch: swift_5
+    :git: https://github.com/mad1n0/ARVideoKit
+  ResearchKit:
+    :branch: master
+    :git: https://github.com/ResearchKit/ResearchKit.git
+
+CHECKOUT OPTIONS:
+  ARVideoKit:
+    :commit: b6581846d03c9462f1a525e61b540684370cabcd
+    :git: https://github.com/mad1n0/ARVideoKit
+  ResearchKit:
+    :commit: 68f9d29b669dd3ac27b548f7c9c28342218cf72e
+    :git: https://github.com/ResearchKit/ResearchKit.git
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  ARVideoKit: 4bd4ac37b63e32de354d5470949416f527dd88f5
+  ResearchKit: 449f96824c4e71c70a9278953c3b279f0fe10805
+  SensingKit: e4acb178652e6bcf23e564f2da111e5087b39e79
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Zip: 414f59909701fda9a84ab774ebe0f5449b1082cc
+  ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
+
+PODFILE CHECKSUM: 52a740b64a2e56ac15c030a788747bbcdfc263ec
+
+COCOAPODS: 1.10.1
