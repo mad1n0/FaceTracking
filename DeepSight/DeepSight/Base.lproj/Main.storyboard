@@ -56,7 +56,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="UPT-fc-qnW"/>
                         <barButtonItem key="rightBarButtonItem" title="Test" id="oM3-vk-wOw">
                             <connections>
-                                <segue destination="tNf-vA-cZY" kind="show" id="f4s-dk-Tzn"/>
+                                <segue destination="tNf-vA-cZY" kind="presentation" identifier="Start Demo Task" modalPresentationStyle="fullScreen" id="f4s-dk-Tzn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -110,14 +110,14 @@
             <objects>
                 <viewController storyboardIdentifier="scnView" title="SCNViewController" wantsFullScreenLayout="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tNf-vA-cZY" customClass="SCNViewController" customModule="DeepSight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wbk-J0-a6e">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQ2-7t-dnT">
                                 <rect key="frame" x="0.0" y="32" width="271" height="615"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dU3-PT-YvL">
-                                <rect key="frame" x="174.66666666666666" y="723" width="65" height="65"/>
+                                <rect key="frame" x="174.66666666666666" y="777" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="0a3-SA-Mx5"/>
                                     <constraint firstAttribute="height" constant="65" id="zq4-ZY-dqy"/>
@@ -132,7 +132,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IA-kA-J6R">
-                                <rect key="frame" x="333" y="723" width="65" height="65"/>
+                                <rect key="frame" x="333" y="777" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="JjL-kP-BNf"/>
                                     <constraint firstAttribute="height" constant="65" id="Lfm-g7-qAw"/>
@@ -147,7 +147,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9V-7W-zcc">
-                                <rect key="frame" x="7" y="0.0" width="65" height="65"/>
+                                <rect key="frame" x="7" y="44" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="lwc-f1-kfX"/>
                                     <constraint firstAttribute="height" constant="65" id="rqT-UX-W5o"/>
