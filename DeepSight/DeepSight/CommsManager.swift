@@ -32,7 +32,7 @@ class CommsManager {
     
     func sendElement (elementURL: URL){
         
-        sendRequest(fileURL: elementURL)
+        sendRequest2(fileURL: elementURL)
         senturls.append(elementURL)
     
     }

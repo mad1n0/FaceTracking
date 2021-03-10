@@ -18,6 +18,7 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
     var H : Int = 10
     var N : Int = 200
     var M : Int = 400
+    var gridcounter: Int = 0
     var timer = Timer()
     var gridwriter : JSONWriter?
     var experimentSequence : [[CGFloat]] = [[]]
@@ -77,7 +78,7 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.setToolbarHidden(true, animated: false)
+        self.navigationController?.setToolbarHidden(true, animated: false)
         
         // Set the view's delegate
         sceneView.delegate = self
@@ -125,39 +126,81 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         recorder?.inputViewOrientations = [.landscapeLeft, .landscapeRight, .portrait]
         // Configure RecordAR to store media files in local app directory
         recorder?.deleteCacheWhenExported = false
-        recorder?.enableAudio = false
+        recorder?.enableAudio = true
         recorder?.fps = .fps30
-    
         
+        let countdown = UITextView()
+        countdown.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         
+        countdown.frame = CGRect(x: 0, y: 350, width: 414, height: 896)
+        self.view.addSubview(countdown)
+        countdown.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+        countdown.font = UIFont(name: "Thonburi", size: 40)
+        countdown.textAlignment = NSTextAlignment(CTTextAlignment.center)
+        
+        var secondsRemaining = 10
+            
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (Timer) in
+            if secondsRemaining > 0 {
+                print ("\(secondsRemaining) seconds")
+                countdown.text = (String(secondsRemaining))
+                secondsRemaining -= 1
+            } else {
+                countdown.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0)
+                Timer.invalidate()
+                self.view.addSubview(self.dot)
+                self.scheduledTimerWithTimeInterval()
+                self.record()
+            }
+        }
+        //sleep(500)
+        
+        //self.view.willRemoveSubview(countdown)
         let screenSize: CGRect = UIScreen.main.bounds
         
-        print(screenSize)
+        print(screenSize.height)
+        //896.0
+        //414.0
+        print(screenSize.width)
         
-        self.view.addSubview(dot)
         
-        self.dot.frame = CGRect(x:175, y:400, width:72, height:72)
-        self.dot.text = ("•")
-        self.dot.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
-        self.dot.font = UIFont(name: "Thonburi", size: 40)
-        self.dot.textAlignment = NSTextAlignment(CTTextAlignment.center)
-        self.dot.backgroundColor = UIColor (red: 1, green: 1, blue: 1, alpha: 1)
-        self.dot.alpha = 1
+        
+        self.recordBtn.alpha = 0
+        self.pauseBtn.alpha = 0
+        
+        
+        
         
         //self.dot.addConstraint(T##constraint: NSLayoutConstraint##NSLayoutConstraint)
         
         //self.dot.frame.origin.y = 400
         
-        let matrix = gridmatrix(a: Int(screenSize.height/18), b: Int(screenSize.width/35), c:100)
+        let matrix = gridmatrix(a: 24, b: 12, c:100)
+        
         
         
         matrix.calcCoords()
         matrix.grid = matrix.generateMatrix()
         prepareExperimentSequence(matrix : matrix)
+        matrix.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
         
-       
+        self.dot.frame = CGRect(x: matrix.mcoords[1]/4, y: matrix.ncoords[1]/4, width: matrix.mcoords[1]/2, height:matrix.ncoords[1]/2)
+        //self.dot.text = ("•")
+        //self.dot.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+        //self.dot.font = UIFont(name: "Thonburi", size: 10)
+        //self.dot.textAlignment = NSTextAlignment(CTTextAlignment.center)
+        self.dot.backgroundColor = UIColor (red: 1, green: 0, blue: 0, alpha: 1)
+        self.dot.alpha = 1
+        self.dot.layer.cornerRadius = self.dot.frame.size.width/2
         
         
+
+        self.view.addSubview(matrix)
+        //self.filldots(matrix: matrix)
+        //self.view.addSubview(path)
+        
+        
+   
         
     }
     
@@ -176,10 +219,26 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
     
     @objc func updateDotPosition(){
         let screenSize: CGRect = UIScreen.main.bounds
+            
+            if (gridcounter < 10){
         let a = experimentSequence.removeLast()
-        self.slidedot(a:a[0] - screenSize.height/2  ,b:a[1] - screenSize.width/2)
+                
+                if let first = a.first, let last = a.last {
+                    self.slidedot(a: first, b: last)
+                }
+            
+                
         
+                gridcounter += 1
+                
         print(a)
+            }
+        
+        else{
+            //print("end of experiment")
+            self.record()
+        }
+        
     }
     
     func scheduledTimerWithTimeInterval(){
@@ -194,8 +253,8 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         UIView.animate(withDuration: 0, delay: 0, options:[], animations: {
             self.dot.transform = CGAffineTransform(translationX: b, y: a)
             //let dotframe = [[dot.layer.presentationLayer] frame]
-            var currentFrame = self.dot.layer.presentation()?.frame
-            print(currentFrame)
+            //var currentFrame = self.dot.layer.presentation()?.frame
+            //print(currentFrame)
             }, completion: nil)
         
         registerDot(x: a, y: b, radius: 0.5)
@@ -204,16 +263,39 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
     }
     
     func showletter(a: CGFloat, b: CGFloat){
-        self.dot.text = ("6")
+        //self.dot.text = ("6")
         //self.dot.text = ("•")
+        let randomInt = Int.random(in: 1...200)
+        if randomInt < 10{
+            self.dot.text = (String(randomInt))
+        }
+        else{
+            self.dot.text = ("•")
+        }
         UIView.animate(withDuration: 0, delay: 2, options:[], animations: {
             //self.dot.attributedText
             //let dotframe = [[dot.layer.presentationLayer] frame]
-            var currentFrame = self.dot.layer.presentation()?.frame
-            print(currentFrame)
+            
+            //var currentFrame = self.dot.layer.presentation()?.frame
+            //print(currentFrame)
             }, completion: nil)
         
-        self.dot.text = ("•")
+        
+    }
+    
+    func filldots(matrix: gridmatrix){
+        for item in self.experimentSequence{
+            self.experimentSequence.removeLast()
+            let d = UIView()
+            d.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0)
+            d.frame = CGRect(x: matrix.mcoords[1]/4, y: matrix.ncoords[1]/4, width: matrix.mcoords[1]/2, height:matrix.ncoords[1]/2)
+            d.backgroundColor = UIColor (red: 1, green: 0, blue: 0, alpha: 1)
+            d.alpha = 1
+            d.layer.cornerRadius = d.frame.size.width/2
+            self.view.addSubview(d)
+        }
+        
+        
     }
     
     
@@ -293,7 +375,7 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
 //            print("haha")
 //        }
             
-            self.commsManager.sendElement(elementURL: urlmp)
+            //self.commsManager.sendElement(elementURL: urlmp)
        // self.appDelegate.fTSensingSession.FTMW.sendRequestVideo(fileURL: urlmp)
 
         }
@@ -315,7 +397,7 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
                 self.commsManager.addElement(elementURL: urlcsv)
                 self.commsManager.sendElement(elementURL: urlcsv)
                 
-            //self.commsManager.addElement(elementURL: urlcsv)
+            self.commsManager.addElement(elementURL: urlcsv)
             self.commsManager.addElement(elementURL: destinationURL)
         do {
             try fileManager.zipItem(at: sourceURL, to: destinationURL)
@@ -323,7 +405,7 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
             print("Creation of ZIP archive failed with error:\(error)")
         }
             
-            self.commsManager.sendElement(elementURL: destinationURL)
+           // self.commsManager.sendElement(elementURL: destinationURL)
             //self.commsManager.sendElement(elementURL: urlcsv)
         //self.appDelegate.fTSensingSession.FTMW.sendRequestJson(fileURL: destinationURL)
         //self.appDelegate.fTSensingSession.FTMW.sendRequestRequest(fileURL: urlcsv)
@@ -406,7 +488,7 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         // Prepare the recorder with sessions configuration
         recorder?.prepare(configuration2)
         
-        self.scheduledTimerWithTimeInterval()
+        
         
     }
     
@@ -573,124 +655,197 @@ extension SCNViewController {
         return now
     }
     
+    func record(){
+        
+        
+        
+        if recorder?.status == .readyToRecord {
+            
+            
+            
+
+            appDelegate.fTSensingSession.enableSensor(sensorType: SKSensorType.DeviceMotion)
+            
+            if(appDelegate.fTSensingSession.isSensorAvailable(sensorType: SKSensorType.DeviceMotion))
+            {
+            
+            }
+            
+            if appDelegate.fTSensingSession.start(sensorType:  SKSensorType.DeviceMotion){
+            }
+            self.fileName = getDate()
+            var fnj = self.fileName
+            let jn = "_AR.json"
+            fnj?.append(jn)
+            var gnf = self.fileName
+            let cn = "_GRID.csv"
+            gnf?.append(cn)
+            
+            self.filePath = getDocumentsDirectory()
+            self.writer = JSONWriter.init(sensorType: "0", withHeader: "0", withFilename: fnj, inPath: self.filePath)
+            self.gridwriter = JSONWriter.init(sensorType: "0", withHeader: "0", withFilename: gnf, inPath: self.filePath)
+            
+            //sender.setTitle("Stop", for: .normal)
+            pauseBtn.setTitle("Pause", for: .normal)
+            pauseBtn.isEnabled = true
+            DispatchQueue.global(qos: .utility).async{
+                self.recorder?.record()
+            }
+        }else if recorder?.status == .recording {
+            //sender.setTitle("Record", for: .normal)
+            pauseBtn.setTitle("Pause", for: .normal)
+            pauseBtn.isEnabled = false
+            writer?.close()
+            gridwriter?.close()
+            recorder?.stop() //{ path in
+//                    self.recorder?.export(video: path) { saved, status in
+//                        DispatchQueue.main.sync {
+//                            self.exportMessage(success: saved, status: status)
+//                        }
+//                    }
+//                }
+            appDelegate.fTSensingSession.stopCSWriter()
+            if appDelegate.fTSensingSession.stop(sensorType: SKSensorType.DeviceMotion){
+            do{
+                try appDelegate.fTSensingSession.sensingKit.deregister(SKSensorType.DeviceMotion)
+                self.zipfiles()
+                self.commsManager.sendFiles()
+                
+            }
+            catch{
+                
+            }
+                
+                
+        }
+        }
+    }
+    
     
     @IBAction func record(_ sender: UIButton) {
         
         
-        
         if sender.tag == 0 {
             
+            self.record()
+            
+            
+            
+        }}}
+            
             //Record
-            if recorder?.status == .readyToRecord {
-                
-                
-
-                appDelegate.fTSensingSession.enableSensor(sensorType: SKSensorType.DeviceMotion)
-                
-                if(appDelegate.fTSensingSession.isSensorAvailable(sensorType: SKSensorType.DeviceMotion))
-                {
-                
-                }
-                
-                if appDelegate.fTSensingSession.start(sensorType:  SKSensorType.DeviceMotion){
-                }
-                self.fileName = getDate()
-                var fnj = self.fileName
-                let jn = "_AR.json"
-                fnj?.append(jn)
-                var gnf = self.fileName
-                let cn = "_GRID.csv"
-                gnf?.append(cn)
-                
-                self.filePath = getDocumentsDirectory()
-                self.writer = JSONWriter.init(sensorType: "0", withHeader: "0", withFilename: fnj, inPath: self.filePath)
-                self.gridwriter = JSONWriter.init(sensorType: "0", withHeader: "0", withFilename: gnf, inPath: self.filePath)
-                
-                sender.setTitle("Stop", for: .normal)
-                pauseBtn.setTitle("Pause", for: .normal)
-                pauseBtn.isEnabled = true
-                DispatchQueue.global(qos: .utility).async{
-                    self.recorder?.record()
-                }
-            }else if recorder?.status == .recording {
-                sender.setTitle("Record", for: .normal)
-                pauseBtn.setTitle("Pause", for: .normal)
-                pauseBtn.isEnabled = false
-                writer?.close()
-                gridwriter?.close()
-                recorder?.stop() //{ path in
-//                    self.recorder?.export(video: path) { saved, status in
-//                        DispatchQueue.main.sync {
-//                            self.exportMessage(success: saved, status: status)
+//            if recorder?.status == .readyToRecord {
+//
+//
+//
+//                appDelegate.fTSensingSession.enableSensor(sensorType: SKSensorType.DeviceMotion)
+//
+//                if(appDelegate.fTSensingSession.isSensorAvailable(sensorType: SKSensorType.DeviceMotion))
+//                {
+//
+//                }
+//
+//                if appDelegate.fTSensingSession.start(sensorType:  SKSensorType.DeviceMotion){
+//                }
+//                self.fileName = getDate()
+//                var fnj = self.fileName
+//                let jn = "_AR.json"
+//                fnj?.append(jn)
+//                var gnf = self.fileName
+//                let cn = "_GRID.csv"
+//                gnf?.append(cn)
+//
+//                self.filePath = getDocumentsDirectory()
+//                self.writer = JSONWriter.init(sensorType: "0", withHeader: "0", withFilename: fnj, inPath: self.filePath)
+//                self.gridwriter = JSONWriter.init(sensorType: "0", withHeader: "0", withFilename: gnf, inPath: self.filePath)
+//
+//                sender.setTitle("Stop", for: .normal)
+//                pauseBtn.setTitle("Pause", for: .normal)
+//                pauseBtn.isEnabled = true
+//                DispatchQueue.global(qos: .utility).async{
+//                    self.recorder?.record()
+//                }
+//            }else if recorder?.status == .recording {
+//                sender.setTitle("Record", for: .normal)
+//                pauseBtn.setTitle("Pause", for: .normal)
+//                pauseBtn.isEnabled = false
+//                writer?.close()
+//                gridwriter?.close()
+//                recorder?.stop() //{ path in
+////                    self.recorder?.export(video: path) { saved, status in
+////                        DispatchQueue.main.sync {
+////                            self.exportMessage(success: saved, status: status)
+////                        }
+////                    }
+////                }
+//                appDelegate.fTSensingSession.stopCSWriter()
+//                if appDelegate.fTSensingSession.stop(sensorType: SKSensorType.DeviceMotion){
+//                do{
+//                    try appDelegate.fTSensingSession.sensingKit.deregister(SKSensorType.DeviceMotion)
+//                    self.zipfiles()
+//                    self.commsManager.sendFiles()
+//
+//                }
+//                catch{
+//
+//                }
+//
+//
+//            }
+//            }
+//            else if sender.tag == 1 {
+//            //Record with duration
+//            if recorder?.status == .readyToRecord {
+//                }
+//                sender.setTitle("Stop", for: .normal)
+//                pauseBtn.setTitle("Pause", for: .normal)
+//                pauseBtn.isEnabled = false
+//                recordBtn.isEnabled = false
+//
+//                    self.recorder?.record(forDuration: 10) { path in
+//                        self.recorder?.export(video: path) { saved, status in
+//                            DispatchQueue.main.sync {
+//                                sender.setTitle("w/Duration", for: .normal)
+//                                self.pauseBtn.setTitle("Pause", for: .normal)
+//                                self.pauseBtn.isEnabled = false
+//                                self.recordBtn.isEnabled = true
+//                                self.exportMessage(success: saved, status: status)
+//                            }
 //                        }
 //                    }
-//                }
-                appDelegate.fTSensingSession.stopCSWriter()
-                if appDelegate.fTSensingSession.stop(sensorType: SKSensorType.DeviceMotion){
-                do{
-                    try appDelegate.fTSensingSession.sensingKit.deregister(SKSensorType.DeviceMotion)
-                    self.zipfiles()
-                    
-                }
-                catch{
-                    
-                }
-                    
-                    
-            }
-        }else if sender.tag == 1 {
-            //Record with duration
-            if recorder?.status == .readyToRecord {
-                }
-                sender.setTitle("Stop", for: .normal)
-                pauseBtn.setTitle("Pause", for: .normal)
-                pauseBtn.isEnabled = false
-                recordBtn.isEnabled = false
-    
-                    self.recorder?.record(forDuration: 10) { path in
-                        self.recorder?.export(video: path) { saved, status in
-                            DispatchQueue.main.sync {
-                                sender.setTitle("w/Duration", for: .normal)
-                                self.pauseBtn.setTitle("Pause", for: .normal)
-                                self.pauseBtn.isEnabled = false
-                                self.recordBtn.isEnabled = true
-                                self.exportMessage(success: saved, status: status)
-                            }
-                        }
-                    }
-                
-            }else if recorder?.status == .recording {
-                sender.setTitle("w/Duration", for: .normal)
-                pauseBtn.setTitle("Pause", for: .normal)
-                pauseBtn.isEnabled = false
-                recordBtn.isEnabled = true
-                recorder?.stop() //{ path in
-//                    self.recorder?.export(video: path) { saved, status in
-//                        DispatchQueue.main.sync {
-//                            self.exportMessage(success: saved, status: status)
-//                        }
-//                    }
-//                }
-                
-                
-                    self.zipfiles()
-                
-                
-            }
-        }else if sender.tag == 2 {
-            //Pause
-            if recorder?.status == .paused {
-                sender.setTitle("Pause", for: .normal)
-                recorder?.record()
-            }else if recorder?.status == .recording {
-                sender.setTitle("Resume", for: .normal)
-                recorder?.pause()
-            }
-        }
-        
-    }
+//
+//            }else if recorder?.status == .recording {
+//                sender.setTitle("w/Duration", for: .normal)
+//                pauseBtn.setTitle("Pause", for: .normal)
+//                pauseBtn.isEnabled = false
+//                recordBtn.isEnabled = true
+//                recorder?.stop() //{ path in
+////                    self.recorder?.export(video: path) { saved, status in
+////                        DispatchQueue.main.sync {
+////                            self.exportMessage(success: saved, status: status)
+////                        }
+////                    }
+////                }
+//
+//
+//                    //self.zipfiles()
+//
+//
+//            }
+//        }else if sender.tag == 2 {
+//            //Pause
+//            if recorder?.status == .paused {
+//                sender.setTitle("Pause", for: .normal)
+//                recorder?.record()
+//            }else if recorder?.status == .recording {
+//                sender.setTitle("Resume", for: .normal)
+//                recorder?.pause()
+//            }
+//        }
+//
+//    }
    
-}
+//        }}
 
 
 

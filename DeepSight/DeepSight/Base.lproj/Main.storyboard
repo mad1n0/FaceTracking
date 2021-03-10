@@ -108,7 +108,7 @@
         <!--SCNViewController-->
         <scene sceneID="eBx-xY-lVZ">
             <objects>
-                <viewController storyboardIdentifier="scnView" title="SCNViewController" wantsFullScreenLayout="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tNf-vA-cZY" customClass="SCNViewController" customModule="DeepSight" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scnView" title="SCNViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tNf-vA-cZY" customClass="SCNViewController" customModule="DeepSight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wbk-J0-a6e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,7 +146,7 @@
                                     <action selector="record:" destination="tNf-vA-cZY" eventType="touchUpInside" id="fte-xQ-PYD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9V-7W-zcc">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9V-7W-zcc">
                                 <rect key="frame" x="7" y="44" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="lwc-f1-kfX"/>
@@ -178,6 +178,7 @@
                             <constraint firstItem="41N-Kq-sNN" firstAttribute="bottom" secondItem="dU3-PT-YvL" secondAttribute="bottom" constant="20" id="usJ-ag-mcz"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="pvz-Hp-HwD"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
