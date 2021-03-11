@@ -9,6 +9,7 @@ import ARKit
 import ARVideoKit
 import Photos
 import SSZipArchive
+import TrueScale
 
 class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate, RenderARDelegate, RecordARDelegate  {
     var fileName : String?
@@ -27,7 +28,7 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
     var dot : UITextView = UITextView()
     let number : UITextView = UITextView()
     var boxSize = 200
-    var rad = 25
+    var rad = 27
     
     let matrix : gridmatrix = gridmatrix(a: 3, b: 20, c : 100, d: 200)
     //var dot : UIView?
@@ -159,6 +160,9 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
                 self.record()
             }
         }
+        
+        //let pointValue = CGFloat(1).toPoint(unit: .cm)
+        //print(pointValue)
         //sleep(500)
         
         //self.view.willRemoveSubview(countdown)
@@ -450,7 +454,7 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
             var gn = self.fileName!
             gn.append("_GRID")
             sourceURLgrid.appendPathComponent(gn)
-            sourceURLgrid.appendPathExtension("json")
+            sourceURLgrid.appendPathExtension("csv")
         sourceURL.appendPathComponent(fn)
         sourceURL.appendPathExtension("json")
         var destinationURL = URL(fileURLWithPath: currentWorkingPath.absoluteString)
@@ -467,13 +471,14 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
             //self.commsManager.addElement(elementURL: urlcsv)
             self.commsManager.addElement(elementURL: destinationURL)
             self.commsManager.addElement(elementURL: destinationURLgrid)
+            
         do {
             try fileManager.zipItem(at: sourceURL, to: destinationURL)
         } catch {
             print("Creation of ZIP archive failed with error:\(error)")
         }
             do {
-                try fileManager.zipItem(at: sourceURL, to: destinationURLgrid)
+                try fileManager.zipItem(at: sourceURLgrid, to: destinationURLgrid)
             } catch {
                 print("Creation of ZIP archive failed with error:\(error)")
             }
