@@ -14,5 +14,6 @@ target 'DeepSight' do
   pod 'SwiftyJSON'
   pod 'Zip'
   pod 'ResearchKit', :git => 'https://github.com/ResearchKit/ResearchKit.git', :branch => 'master'
+  pod 'TrueScale'
 
 end

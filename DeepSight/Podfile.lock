@@ -5,6 +5,7 @@ PODS:
   - SensingKit (0.5.1)
   - SSZipArchive (2.2.3)
   - SwiftyJSON (5.0.0)
+  - TrueScale (1.0.0)
   - Zip (2.1.1)
   - ZIPFoundation (0.9.11)
 
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - SensingKit
   - SSZipArchive
   - SwiftyJSON
+  - TrueScale
   - Zip
   - ZIPFoundation
 
@@ -24,6 +26,7 @@ SPEC REPOS:
     - SensingKit
     - SSZipArchive
     - SwiftyJSON
+    - TrueScale
     - Zip
     - ZIPFoundation
 
@@ -50,9 +53,10 @@ SPEC CHECKSUMS:
   SensingKit: e4acb178652e6bcf23e564f2da111e5087b39e79
   SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TrueScale: 689c35016f71aa9b03c15b3a5bf6aaec21501e48
   Zip: 414f59909701fda9a84ab774ebe0f5449b1082cc
   ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
 
-PODFILE CHECKSUM: 52a740b64a2e56ac15c030a788747bbcdfc263ec
+PODFILE CHECKSUM: 531b290376c93f06999bf916fa8c32786c29e2e0
 
 COCOAPODS: 1.10.0.rc.1
