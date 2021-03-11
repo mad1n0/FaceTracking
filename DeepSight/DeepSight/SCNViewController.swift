@@ -19,19 +19,24 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
     var N : Int = 200
     var M : Int = 400
     var gridcounter: Int = 0
+    var expDuration : Int = 0
     var timer = Timer()
     var gridwriter : JSONWriter?
     var experimentSequence : [[CGFloat]] = [[]]
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var dot : UITextView = UITextView()
+    let number : UITextView = UITextView()
+    var boxSize = 200
+    var rad = 25
+    
+    let matrix : gridmatrix = gridmatrix(a: 3, b: 20, c : 100, d: 200)
     //var dot : UIView?
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet var recordBtn: UIButton!
     @IBOutlet var pauseBtn: UIButton!
+    @IBOutlet var goBack: UIButton!
     //@IBOutlet var gridview: UICollectionView!
     //@IBOutlet var testView: UIView!
-    
-    var dataSource: [String] = ["Ioannis", "Minos", "Marc"]
     //open var collectionView: UICollectionView!
     
     //var arses: ARSession!
@@ -133,12 +138,13 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         countdown.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         
         countdown.frame = CGRect(x: 0, y: 350, width: 414, height: 896)
+        countdown.isUserInteractionEnabled = false
         self.view.addSubview(countdown)
         countdown.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
         countdown.font = UIFont(name: "Thonburi", size: 40)
         countdown.textAlignment = NSTextAlignment(CTTextAlignment.center)
         
-        var secondsRemaining = 10
+        var secondsRemaining = 3
             
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (Timer) in
             if secondsRemaining > 0 {
@@ -156,6 +162,8 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         //sleep(500)
         
         //self.view.willRemoveSubview(countdown)
+        
+        
         let screenSize: CGRect = UIScreen.main.bounds
         
         print(screenSize.height)
@@ -175,16 +183,17 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         
         //self.dot.frame.origin.y = 400
         
-        let matrix = gridmatrix(a: 24, b: 12, c:100)
+        //let matrix = gridmatrix(a: 24, b: 12, c:100)
         
         
         
-        matrix.calcCoords()
-        matrix.grid = matrix.generateMatrix()
-        prepareExperimentSequence(matrix : matrix)
-        matrix.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
-        
-        self.dot.frame = CGRect(x: matrix.mcoords[1]/4, y: matrix.ncoords[1]/4, width: matrix.mcoords[1]/2, height:matrix.ncoords[1]/2)
+        //self.matrix.calcCoords()
+        self.matrix.fitForBoxSize()
+        self.matrix.forceBoxSize()
+        self.matrix.grid = matrix.generateMatrix()
+        self.prepareExperimentSequence(matrix : matrix)
+        self.matrix.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
+        self.dot.frame = CGRect(x: Int(self.boxSize/2 - self.rad/2), y: Int(self.boxSize/2 - self.rad/2) + Int(37.3333), width: self.rad, height: self.rad)
         //self.dot.text = ("•")
         //self.dot.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
         //self.dot.font = UIFont(name: "Thonburi", size: 10)
@@ -192,9 +201,6 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         self.dot.backgroundColor = UIColor (red: 1, green: 0, blue: 0, alpha: 1)
         self.dot.alpha = 1
         self.dot.layer.cornerRadius = self.dot.frame.size.width/2
-        
-        
-
         self.view.addSubview(matrix)
         //self.filldots(matrix: matrix)
         //self.view.addSubview(path)
@@ -203,6 +209,8 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
    
         
     }
+    
+    
     
     func prepareExperimentSequence(matrix : gridmatrix){
         
@@ -213,32 +221,59 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         }
         
         self.experimentSequence.shuffle()
-        
+        self.expDuration = self.experimentSequence.endIndex
+        print(self.experimentSequence.endIndex)
         
     }
     
     @objc func updateDotPosition(){
-        let screenSize: CGRect = UIScreen.main.bounds
-            
-            if (gridcounter < 10){
-        let a = experimentSequence.removeLast()
-                
+            if (gridcounter < expDuration){
+                let a = experimentSequence.removeLast()
+
                 if let first = a.first, let last = a.last {
                     self.slidedot(a: first, b: last)
                 }
-            
-                
-        
+
                 gridcounter += 1
+                print(a)
+            }
+            else{
+            //print("end of experiment")
                 
-        print(a)
+                self.record()
+                let endMessage = UITextView()
+                endMessage.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+                endMessage.backgroundColor =  UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+                endMessage.text = ("                      Experiment ended. Thanks for participating. Please don't leave the app while we config")
+                endMessage.font = UIFont(name: "Thonburi", size: 40)
+                endMessage.textAlignment = NSTextAlignment(CTTextAlignment.center)
+                endMessage.isUserInteractionEnabled = false
+                let buttonHeight: CGFloat = 44
+                let contentInset: CGFloat = 8
+
+                //inset the textView
+                endMessage.textContainerInset = UIEdgeInsets(top: contentInset, left: contentInset, bottom: (buttonHeight+contentInset*2), right: contentInset)
+
+                let button = UIButton(frame: CGRect(x: contentInset, y: endMessage.contentSize.height - buttonHeight - contentInset, width: endMessage.contentSize.width-contentInset*2, height: buttonHeight))
+
+
+                //setup your button here
+                button.setTitle("Done", for: UIControl.State.normal)
+                button.setTitleColor(UIColor.blue, for: UIControl.State.normal)
+                button.backgroundColor = UIColor.white
+
+                //Add the button to the text view
+                endMessage.addSubview(button)
+                self.view.addSubview(endMessage)
+                timer.invalidate()
+                
+
             }
         
-        else{
-            //print("end of experiment")
-            self.record()
-        }
-        
+    }
+    
+    @objc func buttonAction(sender: UIButton!) {
+      print("Button tapped")
     }
     
     func scheduledTimerWithTimeInterval(){
@@ -265,53 +300,67 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
     func showletter(a: CGFloat, b: CGFloat){
         //self.dot.text = ("6")
         //self.dot.text = ("•")
-        let randomInt = Int.random(in: 1...200)
+        let randomInt = Int.random(in: 1...20)
         if randomInt < 10{
+            timer.invalidate()
+            self.dot.frame = CGRect(x:b , y: a, width: 36, height:36)
+            self.dot.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
             self.dot.text = (String(randomInt))
+            self.dot.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+            self.dot.font = UIFont(name: "Thonburi", size: 20)
+            self.dot.textAlignment = NSTextAlignment(CTTextAlignment.center)
+            //self.view.addSubview(number)
+            
         }
         else{
-            self.dot.text = ("•")
+            
+            //self.view.willRemoveSubview(number)
+            
+            
         }
         UIView.animate(withDuration: 0, delay: 2, options:[], animations: {
-            //self.dot.attributedText
-            //let dotframe = [[dot.layer.presentationLayer] frame]
-            
-            //var currentFrame = self.dot.layer.presentation()?.frame
-            //print(currentFrame)
+//            self.dot.frame = CGRect(x: self.matrix.mcoords[1]/4, y: self.matrix.ncoords[1]/4, width: self.matrix.mcoords[1]/2, height: self.matrix.ncoords[1]/2)
+//            //self.dot.text = ("•")
+//            //self.dot.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+//            //self.dot.font = UIFont(name: "Thonburi", size: 10)
+//            //self.dot.textAlignment = NSTextAlignment(CTTextAlignment.center)
+//            self.dot.backgroundColor = UIColor (red: 1, green: 0, blue: 0, alpha: 1)
+//            self.dot.alpha = 1
+//            self.dot.layer.cornerRadius = self.dot.frame.size.width/2
             }, completion: nil)
         
         
     }
     
-    func filldots(matrix: gridmatrix){
-        for item in self.experimentSequence{
-            self.experimentSequence.removeLast()
-            let d = UIView()
-            d.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0)
-            d.frame = CGRect(x: matrix.mcoords[1]/4, y: matrix.ncoords[1]/4, width: matrix.mcoords[1]/2, height:matrix.ncoords[1]/2)
-            d.backgroundColor = UIColor (red: 1, green: 0, blue: 0, alpha: 1)
-            d.alpha = 1
-            d.layer.cornerRadius = d.frame.size.width/2
-            self.view.addSubview(d)
-        }
-        
-        
-    }
-    
-    
-    func fadeTo(a: CGFloat, b: CGFloat){
-        UIView.animate(withDuration: 1, delay: 0, options:[], animations: {
-                self.dot.alpha = 0
-            
-            
-            }, completion: nil)
-        self.showdot(a:a, b:b)
-        UIView.animate(withDuration: 1, delay: 0, options:[], animations: {
-                self.dot.alpha = 1
-            self.showdot(a:a, b:b)
-            
-            }, completion: nil)
-    }
+//    func filldots(matrix: gridmatrix){
+//        for item in self.experimentSequence{
+//            self.experimentSequence.removeLast()
+//            let d = UIView()
+//            d.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0)
+//            d.frame = CGRect(x: matrix.mcoords[1]/4, y: matrix.ncoords[1]/4, width: matrix.mcoords[1]/2, height:matrix.ncoords[1]/2)
+//            d.backgroundColor = UIColor (red: 1, green: 0, blue: 0, alpha: 1)
+//            d.alpha = 1
+//            d.layer.cornerRadius = d.frame.size.width/2
+//            self.view.addSubview(d)
+//        }
+//
+//
+//    }
+//
+//    
+//    func fadeTo(a: CGFloat, b: CGFloat){
+//        UIView.animate(withDuration: 1, delay: 0, options:[], animations: {
+//                self.dot.alpha = 0
+//
+//
+//            }, completion: nil)
+//        self.showdot(a:a, b:b)
+//        UIView.animate(withDuration: 1, delay: 0, options:[], animations: {
+//                self.dot.alpha = 1
+//            self.showdot(a:a, b:b)
+//
+//            }, completion: nil)
+//    }
     
     func slidedot( a: CGFloat, b: CGFloat){
 
@@ -319,12 +368,13 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         UIView.animate(withDuration: 1, delay: 1, options:[], animations: {
             self.dot.transform = CGAffineTransform(translationX: b, y: a)
             //let dotframe = [[dot.layer.presentationLayer] frame]
-            var currentFrame = self.dot.layer.presentation()?.frame
-            print(currentFrame)
+            //var currentFrame = self.dot.layer.presentation()?.frame
+            //print(currentFrame)
             }, completion: nil)
         
-        registerDot(x: a, y: b, radius: 0.5)
-        self.showletter(a:a, b:b)
+            registerDot(x: a, y: b, radius: 0.5)
+            
+            //self.showletter(a:a, b:b)
         //self.dot.frame.origin.x = b
 
     }
@@ -355,58 +405,82 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
     
     func zipfiles() {
         
-        
+        let urlmp2 = self.recorder?.getVideoPath()
+        let urlmp3 = (urlmp2?.lastPathComponent)!
+        let urlmp4 = String(urlmp3)
+        let urlmp = self.getDocumentsDirectory().appendingPathComponent(urlmp4)//"2020-12-03@13-05-27GMT+01:00ARVideo.mp4")
+        let group = DispatchGroup()
+        group.enter()
         
         DispatchQueue.global(qos: .utility).async{
             
         
         
-        let urlmp2 = self.recorder?.getVideoPath()
-        let urlmp3 = (urlmp2?.lastPathComponent)!
-        let urlmp4 = String(urlmp3)
-        let urlmp = self.getDocumentsDirectory().appendingPathComponent(urlmp4)//"2020-12-03@13-05-27GMT+01:00ARVideo.mp4")
+        
             
             self.commsManager.addElement(elementURL: urlmp)
             
-            //wait(DispatchSemaphore)
-            //let s = self.recorder?.getSemaphore()
-            //s!.wait()
-//            while(self.recorder?.status != .readyToRecord){
-//            print("haha")
-//        }
+           // self.commsManager.sendElement(elementURL: urlmp)
             
-            //self.commsManager.sendElement(elementURL: urlmp)
+//            wait(DispatchSemaphore)
+//            let s = self.recorder?.getSemaphore()
+//            s!.wait()
+            while(self.recorder?.status != .readyToRecord){
+//            print("haha")
+                sleep(1)
+            }
+//
+//            self.commsManager.sendElement(elementURL: urlmp)
        // self.appDelegate.fTSensingSession.FTMW.sendRequestVideo(fileURL: urlmp)
-
+            group.leave()
+        }
+        
+        group.notify(queue: .main) {
+            self.commsManager.sendElement(elementURL: urlmp)
         }
         DispatchQueue.global(qos: .utility).async{
             
         //let urlcsv =  self.appDelegate.fTSensingSession.zipData()
         let fileManager = FileManager()
-            let currentWorkingPath = self.getDocumentsDirectory()
+        let currentWorkingPath = self.getDocumentsDirectory()
         var sourceURL = URL(fileURLWithPath: currentWorkingPath.absoluteString)
+            var sourceURLgrid = URL(fileURLWithPath: currentWorkingPath.absoluteString)
         var fn = self.fileName!
         fn.append("_AR")
+            var gn = self.fileName!
+            gn.append("_GRID")
+            sourceURLgrid.appendPathComponent(gn)
+            sourceURLgrid.appendPathExtension("json")
         sourceURL.appendPathComponent(fn)
         sourceURL.appendPathExtension("json")
         var destinationURL = URL(fileURLWithPath: currentWorkingPath.absoluteString)
         destinationURL.appendPathComponent(fn)
         destinationURL.appendPathExtension("zip")
+            var destinationURLgrid = URL(fileURLWithPath: currentWorkingPath.absoluteString)
+            destinationURLgrid.appendPathComponent(gn)
+            destinationURLgrid.appendPathExtension("zip")
             let urlcsv =  self.appDelegate.fTSensingSession.zipData()
             
                 self.commsManager.addElement(elementURL: urlcsv)
-                self.commsManager.sendElement(elementURL: urlcsv)
+                //self.commsManager.sendElement(elementURL: urlcsv)
                 
-            self.commsManager.addElement(elementURL: urlcsv)
+            //self.commsManager.addElement(elementURL: urlcsv)
             self.commsManager.addElement(elementURL: destinationURL)
+            self.commsManager.addElement(elementURL: destinationURLgrid)
         do {
             try fileManager.zipItem(at: sourceURL, to: destinationURL)
         } catch {
             print("Creation of ZIP archive failed with error:\(error)")
         }
+            do {
+                try fileManager.zipItem(at: sourceURL, to: destinationURLgrid)
+            } catch {
+                print("Creation of ZIP archive failed with error:\(error)")
+            }
             
-           // self.commsManager.sendElement(elementURL: destinationURL)
-            //self.commsManager.sendElement(elementURL: urlcsv)
+            self.commsManager.sendElement(elementURL: destinationURL)
+            self.commsManager.sendElement(elementURL: destinationURLgrid)
+            self.commsManager.sendElement(elementURL: urlcsv)
         //self.appDelegate.fTSensingSession.FTMW.sendRequestJson(fileURL: destinationURL)
         //self.appDelegate.fTSensingSession.FTMW.sendRequestRequest(fileURL: urlcsv)
         }
@@ -446,14 +520,14 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
                 // ...
             }
             //self.registerDot(x:1, y: 1, radius: 1)
-        
-        self.gridcount+=1
-        if self.gridcount / 90 == 1{
-            
-            changedotposition()
-            self.gridcount = 0
-            
-        }
+//
+//        self.gridcount+=1
+//        if self.gridcount / 90 == 1{
+//
+//            changedotposition()
+//            self.gridcount = 0
+//
+//        }
         
         
     }
@@ -708,8 +782,10 @@ extension SCNViewController {
             if appDelegate.fTSensingSession.stop(sensorType: SKSensorType.DeviceMotion){
             do{
                 try appDelegate.fTSensingSession.sensingKit.deregister(SKSensorType.DeviceMotion)
+                
                 self.zipfiles()
-                self.commsManager.sendFiles()
+                
+                //self.commsManager.sendFiles()
                 
             }
             catch{
@@ -724,14 +800,19 @@ extension SCNViewController {
     
     @IBAction func record(_ sender: UIButton) {
         
+//
+//        if sender.tag == 0 {
+//
+//            self.record()
+//
+//
+//
+//        }
         
-        if sender.tag == 0 {
-            
-            self.record()
-            
-            
-            
-        }}}
+        self.dismiss(animated: true, completion: nil)
+        
+        
+    }}
             
             //Record
 //            if recorder?.status == .readyToRecord {
