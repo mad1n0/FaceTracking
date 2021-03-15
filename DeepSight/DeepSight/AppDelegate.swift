@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let sensingKit = SensingKitLib.shared()
     let fileManager = FileManager.default
+    
     let fTSensingSession = FTSensingSession(folderName: "foldername")
     
 //    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

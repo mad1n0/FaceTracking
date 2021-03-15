@@ -27,10 +27,11 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var dot : UITextView = UITextView()
     let number : UITextView = UITextView()
-    var boxSize = 200
-    var rad = 27
+    var boxSize = 69
+    var rad = 18
+    let showMatrix : Bool = false
     
-    let matrix : gridmatrix = gridmatrix(a: 3, b: 20, c : 100, d: 200)
+    let matrix : gridmatrix = gridmatrix(a: 3, b: 20, c : 100, d: 69)
     //var dot : UIView?
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet var recordBtn: UIButton!
@@ -85,7 +86,7 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         super.viewDidLoad()
         
         self.navigationController?.setToolbarHidden(true, animated: false)
-        
+        UIApplication.shared.isIdleTimerDisabled = true
         // Set the view's delegate
         sceneView.delegate = self
         sceneView.session.delegate=self
@@ -205,7 +206,9 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         self.dot.backgroundColor = UIColor (red: 1, green: 0, blue: 0, alpha: 1)
         self.dot.alpha = 1
         self.dot.layer.cornerRadius = self.dot.frame.size.width/2
-        self.view.addSubview(matrix)
+        if (self.showMatrix == true){
+            self.view.addSubview(matrix)
+        }
         //self.filldots(matrix: matrix)
         //self.view.addSubview(path)
         
@@ -306,18 +309,44 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         //self.dot.text = ("•")
         let randomInt = Int.random(in: 1...20)
         if randomInt < 10{
-            timer.invalidate()
-            self.dot.frame = CGRect(x:b , y: a, width: 36, height:36)
-            self.dot.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
-            self.dot.text = (String(randomInt))
-            self.dot.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
-            self.dot.font = UIFont(name: "Thonburi", size: 20)
-            self.dot.textAlignment = NSTextAlignment(CTTextAlignment.center)
-            //self.view.addSubview(number)
+            //timer.invalidate()
+//            self.dot.frame = CGRect(x:b , y: a, width: 200, height:200)
+//            self.dot.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
+//            self.dot.text = (String(randomInt))
+//            self.dot.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+//            self.dot.font = UIFont(name: "Thonburi", size: 40)
+//            self.dot.textAlignment = NSTextAlignment(CTTextAlignment.center)
+//
+//
+//
+//            //self.view.addSubview(number)
+////            let numView = UITextView()
+////            numView.frame = CGRect(x: Int(self.dot.frame.minX), y: Int(self.dot.frame.minY),  width: self.boxSize, height: self.boxSize)
+////            numView.backgroundColor= UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
+//            self.dot.frame = CGRect(x: self.dot.frame.minX , y: self.dot.frame.minY, 69, height: 69)
+            
+            //var appendable : [CGFloat] = []
+            //appendable.append(a)
+            //appendable.append(b)
+            
+            //self.experimentSequence.append(appendable)
+            
+
+            //self.dot.frame =  CGRect(x: 0 , y: 0, width: self.view.frame.width, height: self.view.frame.height * 0.3)
             
         }
         else{
             
+//            //self.scheduledTimerWithTimeInterval()
+//            self.dot.frame = CGRect(x: self.dot.frame.minX, y: self.dot.frame.minY, width: 27, height: 27)
+//            //self.dot.text = ("•")
+//            //self.dot.textColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
+//            //self.dot.font = UIFont(name: "Thonburi", size: 10)
+//            //self.dot.textAlignment = NSTextAlignment(CTTextAlignment.center)
+//            self.dot.backgroundColor = UIColor (red: 1, green: 0, blue: 0, alpha: 1)
+//            self.dot.alpha = 1
+//            self.dot.layer.cornerRadius = self.dot.frame.size.width/2
+//
             //self.view.willRemoveSubview(number)
             
             
@@ -378,7 +407,7 @@ class SCNViewController: UIViewController, ARSessionDelegate, ARSCNViewDelegate,
         
             registerDot(x: a, y: b, radius: 0.5)
             
-            //self.showletter(a:a, b:b)
+            self.showletter(a:a, b:b)
         //self.dot.frame.origin.x = b
 
     }
@@ -729,7 +758,7 @@ extension SCNViewController {
     
     func getDate() -> String {
         let df = DateFormatter()
-        df.dateFormat = "yyyy_MM_dd_hh_mm_ss"
+        df.dateFormat = "yyyy_MM_dd_hh_mm_ss_SSSS"
         let now = df.string(from: Date())
         return now
     }
